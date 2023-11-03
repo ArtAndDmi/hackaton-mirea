@@ -23,6 +23,7 @@ body {
 }
 
 .container {
+    overflow-x: hidden;
     z-index: 1;
 }
 
