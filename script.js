@@ -215,32 +215,31 @@ nextPartnerBtn.addEventListener('click', () => {
 
 const menuBtn = document.getElementById('mobileMenuIcon')
 const menu = document.getElementById('mobileMenu')
-const container = document.getElementsByClassName('container')[0]
-let isActiveMenu = false
-console.log(container)
+const closeMenuContainer = document.getElementById('closeMenuContainer')
+
+
 
 menuBtn.addEventListener('click', () => {
-    container.style.zIndex = '3'
-    menu.style.transition = '.5s'
-
+    menu.style.transition = '.2s'
+    closeMenuContainer.style.display = 'block'
     menu.style.display = 'flex'
     setTimeout(() => {
         menu.style.opacity = '1'
-        isActiveMenu = true
     }, 1)
 
 })
 
-container.addEventListener('click', () => {
-    if (isActiveMenu) {
-        menu.style.opacity = '0'
-        setTimeout(() => {
-            menu.style.display = 'none'
-            isActiveMenu = false
-        }, 500)
-    }
+closeMenuContainer.addEventListener('click', () => {
+    menu.style.opacity = '0'
+    closeMenuContainer.style.display = 'none'
+
+    setTimeout(() => {
+        menu.style.display = 'none'
+    },200)
 
 })
+
+
 
 const questionsBodies = [
     {
@@ -311,9 +310,9 @@ const mobileMenuItems = document.getElementsByClassName('mobileMenuItem')
 for (let href of mobileMenuItems) {
     href.addEventListener('click', () => {
         menu.style.opacity = '0'
+        closeMenuContainer.style.display = 'none'
         setTimeout(() => {
             menu.style.display = 'none'
-
         },500)
     })
 }
