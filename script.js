@@ -3,11 +3,6 @@ if (/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)) {
     link.rel = 'stylesheet';
     link.href = 'safari.css';
     document.head.appendChild(link);
-} else {
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'style.css';
-    document.head.appendChild(link);
 }
 
 const timeElement = document.getElementById('time')
