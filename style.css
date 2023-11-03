@@ -34,7 +34,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid #2F313E;
+    border-bottom: 1px solid #2F313E;
     position: fixed;
     top: 0;
     width: 100%;
@@ -77,7 +77,7 @@ body {
     padding: .62rem 1.5rem;
     border-radius: 2.5rem;
     border: 1px solid #0C0E1F;
-    transition: .5s;
+    transition: .2s;
 }
 
 .headerItem:hover {
@@ -964,7 +964,7 @@ body {
     background: rgba(250, 251, 247, 0.01);
     backdrop-filter: blur(2px);
     margin-bottom: 1.5rem;
-    transition: .5s;
+    transition: .2s;
     padding: 1.5rem;
     height: 5rem;
     cursor: pointer;
@@ -1216,7 +1216,7 @@ body {
 
 @media (max-device-width: 767px), (max-width: 767px) {
     html {
-        font-size: 3.9vw;
+        font-size: 3.5vw;
     }
 
     .container {
@@ -1473,7 +1473,7 @@ body {
 
     .descriptionTitle {
         margin-top: 5rem;
-        margin-left: 1.25rem;
+        margin-left: 2.5rem;
         margin-bottom: 1.37rem;
         font-size: 1.5rem;
         font-style: normal;
@@ -1522,9 +1522,9 @@ body {
     .descriptionBlockBody {
         font-size: 0.875rem;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.25rem; /* 142.857% */
-        width: 22.12269rem;
+        width: 24rem;
 
     }
 
@@ -1539,7 +1539,7 @@ body {
     .descriptionParagraphContainer {
         display: flex;
         align-items: center;
-        height: 3rem;
+        height: 2.2rem;
     }
 
     .descriptionParagraphSvg {
@@ -1590,7 +1590,7 @@ body {
     }
 
     .firstPlace {
-        width: calc(24.375rem - 1.25rem);
+        width: 26rem;
         height: 9.25181rem;
         flex-shrink: 0;
         border-radius: 1.42338rem;
@@ -1708,7 +1708,7 @@ body {
     }
 
     .timetableContainer {
-        height: 140rem;
+        height: auto;
     }
 
     .timetableDotsSvg1 {
@@ -1914,15 +1914,15 @@ body {
     }
 
     #activeExpertImg {
-        transition: .5s;
+        transition: .2s;
     }
 
     #expertNameMobile {
-        transition: .5s;
+        transition: .2s;
     }
 
     #expertDescriptionMobile {
-        transition: .5s;
+        transition: .2s;
     }
 
     .expertsTitle {
@@ -1941,14 +1941,14 @@ body {
     }
 
     .expertImg {
-        width: 22.5rem;
-        height: 22.5rem;
+        width: 25.5rem;
+        height: 25.5rem;
         margin-left: .4rem;
     }
 
     #leftArrow {
         position: absolute;
-        top: 10.25rem;
+        top: 12.25rem;
         left: -.55rem;
         width: 2rem;
         height: 2rem;
@@ -2061,7 +2061,7 @@ body {
         background: rgba(250, 251, 247, 0.01);
         backdrop-filter: blur(2px);
         margin-bottom: 1.5rem;
-        transition: .5s;
+        transition: .2s;
         height: 5rem;
         cursor: pointer;
     }

@@ -109,7 +109,7 @@ prevExpertBtn.addEventListener('click', () => {
         activeExpertImg.style.opacity = '1'
         activeExpertName.style.opacity = '1'
         activeExpertDescription.style.opacity = '1'
-    }, 500)
+    }, 200)
 })
 
 
@@ -130,7 +130,7 @@ nextExpertBtn.addEventListener('click', () => {
         activeExpertImg.style.opacity = '1'
         activeExpertName.style.opacity = '1'
         activeExpertDescription.style.opacity = '1'
-    }, 500)
+    }, 200)
 })
 
 
@@ -191,7 +191,7 @@ prevPartnerBtn.addEventListener('click', () => {
         activePartnerImg.src = partners[activePartnerCounter].img
         activePartnerImg.style.opacity = '1'
         activePartnerDescription.style.opacity = '1'
-    }, 500)
+    }, 200)
 })
 
 
@@ -210,7 +210,7 @@ nextPartnerBtn.addEventListener('click', () => {
         activePartnerImg.src = partners[activePartnerCounter].img
         activePartnerImg.style.opacity = '1'
         activePartnerDescription.style.opacity = '1'
-    }, 500)
+    }, 200)
 })
 
 const menuBtn = document.getElementById('mobileMenuIcon')
@@ -313,7 +313,7 @@ for (let href of mobileMenuItems) {
         closeMenuContainer.style.display = 'none'
         setTimeout(() => {
             menu.style.display = 'none'
-        },500)
+        },200)
     })
 }
 
