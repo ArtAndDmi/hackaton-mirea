@@ -1157,7 +1157,6 @@ body {
     margin-top: 2rem;
     transition: .2s;
     cursor: pointer;
-
 }
 
 .footerBorderedButton:hover {
@@ -1169,6 +1168,7 @@ body {
 .hrefTg {
     color: inherit;
 }
+
 
 
 .footerHrefs {
@@ -1188,6 +1188,8 @@ body {
     line-height: 2.375rem; /* 158.333% */
     text-decoration-line: underline;
 }
+
+
 
 
 .descriptionSquareSvg {
@@ -1388,19 +1390,6 @@ body {
         line-height: 1.75rem; /* 175% */
         margin-left: 0;
         margin-top: 2vh;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        transition: .2s;
-
-    }
-
-    .transparentBtn:hover {
-        background: #0C0E1F;
-        color: #B8FE4E;
-    }
-
-    .transparentBtn:active {
-        color: #0C0E1F;
-        background: #B8FE4E;
     }
 
     .mainBlockDateLabel {
@@ -1515,53 +1504,27 @@ body {
 
     .descriptionBlockTitle {
         color: #0C0E1F;
-        font-size: .4rem;
-        max-width: 100%;
+        font-size: 1.125rem;
         font-style: normal;
-        font-weight: 100;
-        line-height: .5rem; /* 111.111% */
-        margin: 0 0 1rem 0;
+        font-weight: 500;
+        line-height: 1.25rem; /* 111.111% */
+        width: 24.375rem;
+        margin: 0;
     }
 
     .descriptionBlockText {
         align-items: center;
         width: 24.375rem;
-        margin-left: 0;
+        margin-left: 1.25rem;
         margin-top: 1.5rem;
     }
 
     .descriptionBlockBody {
-        font-size: .3rem;
+        font-size: 0.875rem;
         font-style: normal;
         font-weight: 300;
-        line-height: 17px; /* 142.857% */
-        width: auto;
-    }
-
-
-    #descriptionBlockBody1 {
-        font-size: .9rem;
-        line-height: 1rem;
-        margin: 0;
-    }
-
-    #descriptionBlockBody2 {
-        font-size: .9rem;
-        line-height: 1rem;
-        margin: 0;
-    }
-
-    #descriptionBlockBody3 {
-        font-size: .9rem;
-        line-height: 1rem;
-        margin: 0;
-
-    }
-
-    #descriptionBlockBody4 {
-        font-size: .9rem;
-        line-height: 1rem;
-        margin: 0;
+        line-height: 1.25rem; /* 142.857% */
+        width: 24rem;
 
     }
 
@@ -1570,7 +1533,7 @@ body {
     }
 
     #descriptionBlockText2 {
-        margin-left: 0rem;
+        margin-left: 1.25rem;
     }
 
     .descriptionParagraphContainer {
@@ -1737,7 +1700,6 @@ body {
 
     .prizeDescriptionContainer {
         margin-left: 1.25rem;
-        height: 4rem;
     }
 
     .prizeDescriptionStarSvg {
@@ -1829,127 +1791,21 @@ body {
         border-radius: 2rem;
     }
 
-    .timetableBlockTitle {
-        font-size: .87rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.25rem; /* 111.111% */
-        width: 21.4375rem;
-    }
-
     .timetableBlockDescription {
-        font-size: 0.6rem;
+        font-size: 0.875rem;
         font-style: normal;
         font-weight: 400;
         line-height: 1.25rem; /* 142.857% */
-        width: auto;
+        width: 21rem;
     }
 
     #timetableBlockDescription2 {
-        width: 17rem;
-        font-size: .4rem;
-        font-weight: 300;
+        width: 15rem;
     }
 
     #timetableBlockDescription3 {
-        width: 17rem;
-        font-size: .4rem;
-        font-weight: 300;
-        /*line-height: 1rem;*/
+        width: 15rem;
     }
-
-    /*#timetableBlockTitleContainer4 {*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*}*/
-
-    #timetableBlockTitle4 {
-        font-size: 1rem;
-    }
-
-
-
-    .greenCircle {
-        width: .27rem;
-        height: .27rem;
-        border: 1px solid #B8FE4E;
-    }
-
-    #timetableBlockDescription41 {
-        color: #FAFBF7;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 20px; /* 142.857% */
-        font-size: .38rem;
-        font-family: 'Montserrat', sans-serif;
-        width: 100%;
-
-    }
-    #timetableBlockDescription42 {
-        color: #FAFBF7;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 20px; /* 142.857% */
-        font-size: .38rem;
-        font-family: 'Montserrat', sans-serif;
-        width: 100%;
-
-    }
-    #timetableBlockDescription43 {
-        color: #FAFBF7;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 20px; /* 142.857% */
-        font-size: .38rem;
-        font-family: 'Montserrat', sans-serif;
-        width: 100%;
-    }
-
-    #timetableBlockDescription4 {
-        color: #FAFBF7;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 20px; /* 142.857% */
-        font-size: .38rem;
-        font-family: 'Montserrat', sans-serif;
-        width: 100%;
-    }
-
-    #timetableBlockDescription44 {
-        color: #FAFBF7;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 20px; /* 142.857% */
-        font-size: .8rem;
-        height: 1rem;
-        font-family: 'Montserrat', sans-serif;
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    #timetableBlockDescription44Label {
-        font-size: inherit;
-    }
-
-    #timetableBlockDescription4 {
-        color: #FAFBF7;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 1rem; /* 142.857% */
-        font-size: .8rem;
-        height: 1rem;
-        font-family: 'Montserrat', sans-serif;
-        width: 90%;
-        margin-bottom: 1rem;
-        margin-top: .5rem;
-    }
-
-    #timetableBlockDescription4Label {
-        font-size: inherit;
-    }
-
-
-
 
     .timetableBlockDescriptionContainer {
         align-items: start;
@@ -1987,7 +1843,13 @@ body {
         height: 121rem;
     }
 
-
+    .timetableBlockTitle {
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.25rem; /* 111.111% */
+        width: 21.4375rem;
+    }
 
     .expertsContainer {
         height: auto;
@@ -2098,7 +1960,7 @@ body {
 
     #rightArrow {
         position: absolute;
-        top: 12.25rem;
+        top: 10.25rem;
         right: .55rem;
         width: 2rem;
         height: 2rem;
@@ -2202,11 +2064,6 @@ body {
         transition: .2s;
         height: 5rem;
         cursor: pointer;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    }
-
-    .question:active {
-        user-select: none;
     }
 
 
@@ -2372,6 +2229,5 @@ body {
 
 
 }
-
 
 
