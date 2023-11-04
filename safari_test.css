@@ -35,7 +35,7 @@ body {
     align-items: center;
     justify-content: space-around;
     border-bottom: 1px solid #2F313E;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 3;
@@ -133,26 +133,28 @@ body {
 .mainBlockSvgLinesLeft {
     position: absolute;
     z-index: -1;
-    left: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 125rem;
+    left: -9rem;
+    top: -30rem;
+    height: 140rem;
+    width: 160rem;
 }
 
 .mainBlockSvgLinesRight {
+    height: 140rem;
+    width: 160rem;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -20rem;
+    right: -27rem;
     z-index: -1;
-    width: 100rem;
 }
 
-.mainBlockSvgPoints {
+.svgPoints {
     position: absolute;
-    top: 34rem;
-    right: 6rem;
+    width: 26.5rem;
+    height: 11.5rem;
+    top: 23rem;
+    left: 89rem;
     z-index: -1;
-    width: 23.5rem;
 
 }
 
@@ -160,17 +162,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*justify-content: center;*/
-    height: 92vh;
-    padding-top: 6rem;
+    justify-content: center;
+    height: 91vh;
     width: 100%;
 }
 
 
 .mainBlockTitle {
-    margin-top: 13.3rem;
+    margin-top: 13.75rem;
     color: #B8FE4E;
-    font-size: 4.7rem;
+    font-size: 5rem;
     font-style: normal;
     font-weight: 700;
     line-height: 1.75rem; /* 43.75% */
@@ -181,11 +182,11 @@ body {
     color: #FAFBF7;
     /* подзаголовок */
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 3rem; /* 150% */
-    margin: 3rem 0 0 0;
+    margin: 2.25rem 0 0 0;
     height: 3rem;
 }
 
@@ -207,18 +208,26 @@ body {
     text-align: center;
     /* подзаголовок */
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 3rem; /* 150% */
     margin: 0;
 }
 
+.mainBlockItemSvg {
+    width: 3.125rem;
+    height: 3.125rem;
+    margin: 0 1.06rem;
+}
 
+#mainBlockItemSvg1 {
+    display: none;
+}
 
 .mainBlockButtons {
     display: flex;
-    margin-top: 4.4rem;
+    margin-top: 4.12rem;
 }
 
 .greenBtn {
@@ -278,17 +287,8 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 3rem; /* 150% */
+    margin-top: 6.44rem;
     margin-bottom: 0;
-}
-
-.timerContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    height: 13rem;
-    position: absolute;
-    bottom: 3.94rem
 }
 
 .timeToStart {
@@ -298,38 +298,13 @@ body {
     font-weight: 700;
     line-height: 1.75rem;
     margin: 1.25rem 0 0 0;
-    width: 35rem;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 4rem;
-    /*border: 1px solid red;*/
 }
 
 .timeLabels {
     display: flex;
-    justify-content: center;
-    width: 35rem;
-    /*border: 1px solid red;*/
-
+    justify-content: space-between;
+    width: 24rem;
 }
-
-.timeValue {
-
-    width: auto;
-    height: 4rem;
-    text-align: center;
-    position: relative;
-    padding: 0 1rem;
-    display: flex;
-    align-items: center;
-
-
-}
-
-
 
 .timeLabel {
     color: #FAFBF7;
@@ -338,16 +313,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 2.375rem; /* 158.333% */
-    position: absolute;
-    top: 2.5rem;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-
 }
-
-
 
 .description {
     background: #FAFBF7;
@@ -355,37 +321,6 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-}
-
-.descriptionSvgLines {
-    right: 0;
-    position: absolute;
-    z-index: 0;
-    width: 125rem;
-    height: 140rem;
-    bottom: 0;
-}
-
-.descriptionSvgStar {
-    position: absolute;
-    top: 0;
-    left: 40rem;
-    z-index: 0;
-    width: 50rem;
-}
-
-.descriptionSvgDots1 {
-    position: absolute;
-    top: 42rem;
-    left: 5rem;
-    width: 35rem;
-}
-
-.descriptionSvgDots2 {
-    position: absolute;
-    top: 91rem;
-    right: 8rem;
-    width: 35rem;
 }
 
 .descriptionSvgPoints1 {
@@ -492,20 +427,21 @@ body {
     height: 85rem;
 }
 
-.prizesStar {
+.prizeSquareSvg {
     position: absolute;
-    bottom: 0;
-    left: 3rem;
-    width: 90rem;
-    height: 90rem;
+    width: 80rem;
+    height: 80rem;
+    top: -5rem;
+    left: 10rem;
+    z-index: -1;
 }
-
-
 
 .prizeDotsSvg {
     position: absolute;
-    top: 30rem;
-    right: 4rem;
+    z-index: -1;
+    top: 28rem;
+    right: 6.81rem;
+    width: 26.5rem;
 
 }
 
@@ -654,23 +590,24 @@ body {
     position: relative;
     z-index: -2;
     overflow-x: hidden;
+
 }
 
 .timetableSvgLines1 {
     position: absolute;
-    top: 0;
     width: 125rem;
-    height: 160rem;
-    right: 0;
+    height: 140rem;
     z-index: -1;
+    top: 0rem;
 }
 
-.timetableSvgDots {
+.timetableDotsSvg1 {
     position: absolute;
-    top: 5rem;
-    right: 40rem;
+    width: 100%;
     z-index: -1;
-    height: 12rem;
+    top: 0rem;
+    left: 4rem;
+    height: 11.5rem;
 }
 
 .timetableSvgLinesMobile1 {
@@ -679,21 +616,10 @@ body {
 
 .timetableSvgLines2 {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 125rem;
-    height: 125rem;
+    width: 140rem;
+    height: 140rem;
+    top: 16.57rem;
     z-index: -1;
-}
-
-.timetableSvgSquare {
-    position: absolute;
-    bottom: 17rem;
-    left: 22rem;
-    width: 35rem;
-    height: 35rem;
-    z-index: -1;
-
 }
 
 .timetableSquareSvg1 {
@@ -708,16 +634,15 @@ body {
 
 .svgLine {
     position: absolute;
-    top: 18.19rem;
-    left: 35.4rem;
-    height: 128rem;
-
+    top: 15.19rem;
+    left: 35.5rem;
+    height: 128.75rem;
 }
 
 .timetableTitle {
     color: #B8FE4E;
     margin: 0 0 6.5rem 0;
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-left: 13.13rem;
     /* заголовок обычный */
     font-size: 3rem;
@@ -834,34 +759,6 @@ body {
     line-height: 2rem;
 }
 
-#timetableBlockDescription4 {
-    width: 50rem;
-    color: #FAFBF7;
-    margin-top: 1rem;
-    margin-bottom: .5rem;
-    /* текст мелкий */
-    font-family: Montserrat;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2rem;
-}
-
-#timetableBlockDescription44 {
-    margin-top: .5rem;
-    width: 50rem;
-    color: #FAFBF7;
-
-    /* текст мелкий */
-    font-family: Montserrat;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2rem;
-}
-
-
-
 .greenCircle {
     width: 0.5rem;
     height: 0.5rem;
@@ -894,11 +791,10 @@ body {
 
 .expertsSvgLines1 {
     position: absolute;
-    z-index: 0;
-    top: 10rem;
-    height: 73rem;
+    z-index: -1;
     width: 125rem;
-
+    height: 80rem;
+    overflow: hidden;
 
 }
 
@@ -911,37 +807,30 @@ body {
     right: 13.13rem;
 }
 
-.expertsSvgDots1 {
-    position: absolute;
-    top: 81.5rem;
-    right: 13.13rem;
-    width: 30rem;
-}
-
 .expertsSvgLines2 {
     position: absolute;
-    top: 100rem;
+    z-index: -1;
+    top: 98rem;
     width: 125rem;
-    left: 0;
-    z-index: 0;
-}
-
-.expertsSvgDots2 {
-    position: absolute;
-    bottom: 131rem;
-    width: 25rem;
-    left: 10rem;
+    height: 80rem;
 }
 
 .expertsSvgLines3 {
     position: absolute;
-    top: 140rem;
-    width: 125rem;
-    height: 140rem;
-    z-index: 1;
+    z-index: -1;
+    top: 155rem;
+    left: -40rem;
+    width: 200rem;
+    height: 100rem;
 }
 
-
+.expertsSvgLines4 {
+    position: absolute;
+    z-index: -1;
+    top: 240rem;
+    width: 165rem;
+    height: 100rem;
+}
 
 .expertsTitle {
     color: #0C0E1F;
@@ -958,7 +847,6 @@ body {
 .expert {
     display: flex;
     flex-direction: column;
-    z-index: 2;
 
 }
 
@@ -1012,7 +900,6 @@ body {
     font-weight: 500;
     line-height: 1.75rem; /* 58.333% */
     margin-bottom: 6rem;
-    z-index: 10;
 }
 
 .partnersRow {
@@ -1028,7 +915,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 10;
 
 }
 
@@ -1062,23 +948,12 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 1.75rem; /* 58.333% */
-    z-index: 2;
 }
 
 .questions {
     display: flex;
     flex-direction: column;
     margin-left: 13.13rem;
-}
-
-.questionSvgLines {
-    position: absolute;
-    bottom: 15rem;
-    left: 0;
-    width: 125rem;
-    height: 50rem;
-    z-index: 0;
-
 }
 
 .question {
@@ -1099,10 +974,6 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-}
-
-.question:last-child {
-    margin-bottom: 10rem;
 }
 
 
@@ -1286,7 +1157,6 @@ body {
     margin-top: 2rem;
     transition: .2s;
     cursor: pointer;
-
 }
 
 .footerBorderedButton:hover {
@@ -1298,6 +1168,7 @@ body {
 .hrefTg {
     color: inherit;
 }
+
 
 
 .footerHrefs {
@@ -1317,6 +1188,8 @@ body {
     line-height: 2.375rem; /* 158.333% */
     text-decoration-line: underline;
 }
+
+
 
 
 .descriptionSquareSvg {
@@ -1342,91 +1215,6 @@ body {
 
 
 @media (max-device-width: 767px), (max-width: 767px) {
-
-    .mainBlockSvgLinesLeft {
-        display: none;
-    }
-
-    .mainBlockSvgLinesRight {
-        display: none;
-    }
-
-    .mainBlockSvgPoints {
-        display: none;
-    }
-
-    .descriptionSvgLines {
-        display: none;
-    }
-
-    .descriptionSvgStar {
-        display: none;
-    }
-
-    .descriptionSvgDots1 {
-        display: none;
-    }
-
-    .descriptionSvgDots2 {
-        display: none;
-    }
-
-    .prizesStar {
-        display: none;
-    }
-
-    .prizeDotsSvg {
-        display: none;
-    }
-
-    .timetableSvgLines1 {
-        display: none;
-    }
-
-    .timetableSvgDots {
-        display: none;
-    }
-
-    .timetableSvgLines2 {
-        display: none;
-    }
-
-    .timetableSvgSquare {
-        display: none;
-    }
-
-    .expertsSvgLines1 {
-        display: none;
-    }
-
-    .expertsSvgDots1 {
-        display: none;
-    }
-
-    .expertsSvgDots2 {
-        display: none;
-    }
-
-    .expertsSvgLines3 {
-        display: none;
-    }
-
-    .questionSvgLines {
-        display: none;
-    }
-
-    .footerSvgLines1 {
-        display: none;
-    }
-
-    .footerSvgDots1 {
-        display: none;
-    }
-
-
-
-
-
     html {
         font-size: 3.5vw;
     }
@@ -1436,9 +1224,8 @@ body {
     }
 
     .header {
-        justify-content: space-between;
+        justify-content: left;
         position: fixed;
-        height: 4.5rem;
         z-index: 3;
     }
 
@@ -1451,28 +1238,30 @@ body {
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 50%;
+        margin-left: 6rem;
         cursor: pointer;
         z-index: 3;
-        margin-right: 1.25rem;
     }
 
     .mobileMenu {
+        position: absolute;
+        top: .9rem;
+        width: 14.5rem;
+        background: #0C0E1F;
+        padding: 1.5rem 0;
+        border: 1px solid #2F313E;
+        right: .9rem;
+        border-radius: 2rem;
         display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(51, 51, 51, 0.9); /* Semi-transparent background */
-        backdrop-filter: blur(1rem);
-        z-index: 10;
-        /*display: flex;*/
         flex-direction: column;
+        align-items: end;
+        opacity: 0;
+        z-index: 3;
     }
 
     .mobileMenuItem {
         color: #FAFBF7;
-        text-align: left;
+        text-align: right;
         font-size: 1rem;
         font-style: normal;
         font-weight: 500;
@@ -1481,6 +1270,7 @@ body {
         padding: 0.6rem 1.5rem;
         margin-right: 1.25rem;
         border-radius: 2.5rem;
+        border: 1px solid #0C0E1F;
         text-decoration: none;
         transition: .2s;
     }
@@ -1494,7 +1284,27 @@ body {
         display: none;
     }
 
+    .mainBlockSvgLinesLeft {
+        width: 70rem;
+        height: 70rem;
+        top: 10rem;
+        left: -30rem;
+    }
 
+    .mainBlockSvgLinesRight {
+        /*display: none;*/
+        width: 70rem;
+        height: 80rem;
+        top: -5rem;
+        left: -20rem;
+    }
+
+    .svgPoints {
+        width: 20.0625rem;
+        height: 8.6875rem;
+        left: 15.75rem;
+        top: 26rem;
+    }
 
     .participateBtn {
         display: none;
@@ -1528,20 +1338,17 @@ body {
     .mainBlockContainer {
         flex-direction: column;
         align-self: start;
-        margin-left: 2rem;
     }
 
     .mainBlockItemSvg {
         width: 2rem;
         height: 2rem;
-        margin-right: .1rem;
-
     }
 
     .mainBlockItemTitle {
 
         color: #F6F9F1;
-        margin-left: 1rem;
+
         /* Моб текст обычный */
         font-family: Montserrat;
         font-size: 1rem;
@@ -1583,32 +1390,12 @@ body {
         line-height: 1.75rem; /* 175% */
         margin-left: 0;
         margin-top: 2vh;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        transition: .2s;
-
-    }
-
-    .transparentBtn:hover {
-        background: #0C0E1F;
-        color: #B8FE4E;
-    }
-
-    .transparentBtn:active {
-        color: #0C0E1F;
-        background: #B8FE4E;
-    }
-
-    .timerContainer {
-        position: absolute;
-        display: flex;
-        align-items: start;
-        top: 8rem;
-        left: 0;
-        width: 100%;
     }
 
     .mainBlockDateLabel {
-
+        position: absolute;
+        top: 4rem;
+        left: 1.31rem;
         margin-top: 0;
         /* Моб подзаголовок */
         font-family: Montserrat;
@@ -1616,11 +1403,12 @@ body {
         font-style: normal;
         font-weight: 400;
         line-height: 1.25rem; /* 111.111% */
-        padding-left: 1rem;
     }
 
     .timeToStart {
-        width: auto;
+        position: absolute;
+        top: 10rem;
+        left: 1.31rem;
         margin: 0;
         font-size: 2rem;
         font-style: normal;
@@ -1716,53 +1504,27 @@ body {
 
     .descriptionBlockTitle {
         color: #0C0E1F;
-        font-size: 1rem;
-        max-width: 100%;
+        font-size: 1.125rem;
         font-style: normal;
-        font-weight: 100;
-        line-height: 1rem; /* 111.111% */
-        margin: 0 0 1rem 0;
+        font-weight: 500;
+        line-height: 1.25rem; /* 111.111% */
+        width: 24.375rem;
+        margin: 0;
     }
 
     .descriptionBlockText {
         align-items: center;
         width: 24.375rem;
-        margin-left: 0;
+        margin-left: 1.25rem;
         margin-top: 1.5rem;
     }
 
     .descriptionBlockBody {
-        font-size: .9rem;
+        font-size: 0.875rem;
         font-style: normal;
         font-weight: 300;
-        line-height: 1.1rem; /* 142.857% */
-        width: auto;
-    }
-
-
-    #descriptionBlockBody1 {
-        font-size: .9rem;
-        line-height: 1rem;
-        margin: 0;
-    }
-
-    #descriptionBlockBody2 {
-        font-size: .9rem;
-        line-height: 1rem;
-        margin: 0;
-    }
-
-    #descriptionBlockBody3 {
-        font-size: .9rem;
-        line-height: 1rem;
-        margin: 0;
-
-    }
-
-    #descriptionBlockBody4 {
-        font-size: .9rem;
-        line-height: 1rem;
-        margin: 0;
+        line-height: 1.25rem; /* 142.857% */
+        width: 24rem;
 
     }
 
@@ -1771,7 +1533,7 @@ body {
     }
 
     #descriptionBlockText2 {
-        margin-left: 0rem;
+        margin-left: 1.25rem;
     }
 
     .descriptionParagraphContainer {
@@ -1938,7 +1700,6 @@ body {
 
     .prizeDescriptionContainer {
         margin-left: 1.25rem;
-        height: 4rem;
     }
 
     .prizeDescriptionStarSvg {
@@ -2030,135 +1791,21 @@ body {
         border-radius: 2rem;
     }
 
-    .timetableBlockTitle {
-        font-size: .87rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.25rem; /* 111.111% */
-        width: 21.4375rem;
-    }
-
     .timetableBlockDescription {
-        font-size: 1rem;
+        font-size: 0.875rem;
         font-style: normal;
         font-weight: 400;
         line-height: 1.25rem; /* 142.857% */
-        width: auto;
-    }
-
-    #timetableAddress {
-        width: 20rem;
+        width: 21rem;
     }
 
     #timetableBlockDescription2 {
-        width: 17rem;
-        font-size: 1rem;
-        font-weight: 300;
+        width: 15rem;
     }
 
     #timetableBlockDescription3 {
-        width: 17rem;
-        font-size: 1rem;
-        font-weight: 300;
-        /*line-height: 1rem;*/
+        width: 15rem;
     }
-
-    /*#timetableBlockTitleContainer4 {*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*}*/
-
-    #timetableBlockTitle4 {
-        font-size: 1rem;
-    }
-
-
-
-    .greenCircle {
-        width: .27rem;
-        height: .27rem;
-        border: 1px solid #B8FE4E;
-    }
-
-    #timetableBlockDescription41 {
-        color: #FAFBF7;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 20px; /* 142.857% */
-        font-size: 1rem;
-        font-family: 'Montserrat', sans-serif;
-        width: 100%;
-        margin-bottom: 0rem;
-
-    }
-    #timetableBlockDescription42 {
-        color: #FAFBF7;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 20px; /* 142.857% */
-        font-size: 1rem;
-        font-family: 'Montserrat', sans-serif;
-        width: 100%;
-
-    }
-    #timetableBlockDescription43 {
-        color: #FAFBF7;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 20px; /* 142.857% */
-        font-size: 1rem;
-        font-family: 'Montserrat', sans-serif;
-        width: 100%;
-    }
-
-    #timetableBlockDescription4 {
-        color: #FAFBF7;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 20px; /* 142.857% */
-        font-size: 1rem;
-        font-family: 'Montserrat', sans-serif;
-        width: 100%;
-        margin-bottom: 0;
-    }
-
-    #timetableBlockDescription44 {
-        color: #FAFBF7;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 20px; /* 142.857% */
-        font-size: 1rem;
-        height: 1rem;
-        font-family: 'Montserrat', sans-serif;
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    #timetableBlockDescription44Label {
-        font-size: 1rem;
-        line-height: 1.1rem;
-    }
-
-    #timetableBlockDescription4 {
-        color: #FAFBF7;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 1rem; /* 142.857% */
-        font-size: .8rem;
-        height: 1rem;
-        font-family: 'Montserrat', sans-serif;
-        width: 90%;
-        margin-bottom: 1rem;
-        margin-top: .5rem;
-    }
-
-    #timetableBlockDescription4Label {
-        font-size: 1rem;
-        margin-bottom: 10rem;
-    }
-
-
-
 
     .timetableBlockDescriptionContainer {
         align-items: start;
@@ -2193,10 +1840,16 @@ body {
         left: 1.3rem;
         top: 12rem;
         width: 2rem;
-        height: 112rem;
+        height: 121rem;
     }
 
-
+    .timetableBlockTitle {
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.25rem; /* 111.111% */
+        width: 21.4375rem;
+    }
 
     .expertsContainer {
         height: auto;
@@ -2307,7 +1960,7 @@ body {
 
     #rightArrow {
         position: absolute;
-        top: 12.25rem;
+        top: 10.25rem;
         right: .55rem;
         width: 2rem;
         height: 2rem;
@@ -2411,11 +2064,6 @@ body {
         transition: .2s;
         height: 5rem;
         cursor: pointer;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    }
-
-    .question:active {
-        user-select: none;
     }
 
 
@@ -2581,6 +2229,5 @@ body {
 
 
 }
-
 
 
