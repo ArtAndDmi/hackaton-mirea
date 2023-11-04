@@ -1729,10 +1729,11 @@ body {
         width: 24.375rem;
         margin-left: 0;
         margin-top: 1.5rem;
+        font-size: .9rem;
     }
 
     .descriptionBlockBody {
-        font-size: .9rem;
+        font-size: inherit;
         font-style: normal;
         font-weight: 300;
         line-height: 1.1rem; /* 142.857% */
@@ -1741,26 +1742,26 @@ body {
 
 
     #descriptionBlockBody1 {
-        font-size: .9rem;
+        font-size: inherit;
         line-height: 1rem;
         margin: 0;
     }
 
     #descriptionBlockBody2 {
-        font-size: .9rem;
+        font-size: inherit;
         line-height: 1rem;
         margin: 0;
     }
 
     #descriptionBlockBody3 {
-        font-size: .9rem;
+        font-size: inherit;
         line-height: 1rem;
         margin: 0;
 
     }
 
     #descriptionBlockBody4 {
-        font-size: .9rem;
+        font-size: inherit;
         line-height: 1rem;
         margin: 0;
 
@@ -2039,7 +2040,7 @@ body {
     }
 
     .timetableBlockDescription {
-        font-size: 1rem;
+        font-size: 10px;
         font-style: normal;
         font-weight: 400;
         line-height: 1.25rem; /* 142.857% */
@@ -2119,7 +2120,8 @@ body {
         font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
         width: 100%;
-        margin-bottom: 0;
+        padding-bottom: .8rem;
+        padding-top: .4rem;
     }
 
     #timetableBlockDescription44 {
@@ -2128,6 +2130,7 @@ body {
         font-weight: 300;
         line-height: 20px; /* 142.857% */
         font-size: 1rem;
+        border: 1px solid red;
         height: 1rem;
         font-family: 'Montserrat', sans-serif;
         width: 100%;
