@@ -232,15 +232,46 @@ const menuBtn = document.getElementById('mobileMenuIcon')
 const menu = document.getElementById('mobileMenu')
 // const closeMenuContainer = document.getElementById('closeMenuContainer')
 
-
+let isCross = false
 
 menuBtn.addEventListener('click', () => {
-    menu.style.transition = '.2s'
-    // closeMenuContainer.style.display = 'block'
-    menu.style.display = 'flex'
-    setTimeout(() => {
-        menu.style.opacity = '1'
-    }, 1)
+    const firstLine = document.getElementById('mobileMenuIconPath1')
+    const secondLine = document.getElementById('mobileMenuIconPath2')
+    const thirdLine = document.getElementById('mobileMenuIconPath3')
+    firstLine.transition = '.2s'
+    secondLine.style.transition = '.2s'
+    thirdLine.style.transition = '.2s'
+
+    menuBtn.style.transition = '.2s'
+    if (!isCross) {
+        firstLine.setAttribute('d', 'M10 18H26')
+        thirdLine.setAttribute('d', 'M18 10 L18 26')
+
+
+        menuBtn.style.transform = 'rotate(45deg)'
+        isCross = true
+        menu.style.display = 'flex'
+        setTimeout(() => {
+            menu.style.opacity = '1'
+        }, 1)
+    } else {
+        firstLine.setAttribute('d', 'M10 12H26')
+        thirdLine.setAttribute('d', 'M10 24H26')
+
+        menuBtn.style.transform = 'rotate(0deg)'
+        isCross = false
+        menu.style.opacity = '0'
+        setTimeout(() => {
+            menu.style.display = 'none'
+        }, 200)
+    }
+
+
+
+    // firstLine.setAttribute("transform", "rotate(90deg)");
+    // menu.style.transition = '.2s'
+    // // closeMenuContainer.style.display = 'block'
+
 
 })
 
@@ -286,26 +317,32 @@ const activeQuestions = [false, false, false, false, false]
 for (let i = 0; i < questions.length; i++) {
     questions[i].addEventListener('click', () => {
         answers[i].style.transition = '.2s'
-
+        const svg = questions[i].children[0].children[1]
+        const vertLine = svg.children[0]
+        const horLine = svg.children[1]
         if (!activeQuestions[i]) {
             activeQuestions[i] = true
-            questions[i].style.height = '20rem'
-            answers[i].style.opacity = '0'
 
+            questions[i].style.height = window.innerWidth > 767 ? '13rem' : '18rem'
+            answers[i].style.opacity = '0'
+            svg.style.transform = 'rotate(90deg)'
+            vertLine.style.display  ='none'
 
             answers[i].innerText = questionsBodies[i].answer
             answers[i].style.display = 'block'
 
             setTimeout(() => {
-                answers[i].style.height = '15rem'
+                answers[i].style.height = '13rem'
                 answers[i].style.opacity = '1'
 
-            }, 200)
+            }, 1)
         } else {
             activeQuestions[i] = false
             questions[i].style.height = '5rem'
             answers[i].style.opacity = '0'
             answers[i].style.height = '0'
+            svg.style.transform = 'rotate(0deg)'
+            vertLine.style.display  ='block'
 
 
 
@@ -325,6 +362,17 @@ const mobileMenuItems = document.getElementsByClassName('mobileMenuItem')
 for (let href of mobileMenuItems) {
     href.addEventListener('click', () => {
         menu.style.opacity = '0'
+
+        const firstLine = document.getElementById('mobileMenuIconPath1')
+        const secondLine = document.getElementById('mobileMenuIconPath2')
+        const thirdLine = document.getElementById('mobileMenuIconPath3')
+        firstLine.transition = '.2s'
+        secondLine.style.transition = '.2s'
+        thirdLine.style.transition = '.2s'
+        menuBtn.style.transform = 'rotate(0deg)'
+        firstLine.setAttribute('d', 'M10 12H26')
+        thirdLine.setAttribute('d', 'M10 24H26')
+        isCross = false
         //closeMenuContainer.style.display = 'none'
         setTimeout(() => {
             menu.style.display = 'none'
