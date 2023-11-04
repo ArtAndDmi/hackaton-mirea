@@ -1,11 +1,14 @@
-if (/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)) {
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'safari.css';
-    document.head.appendChild(link);
-}
+// if (/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)) {
+//     const link = document.createElement('link');
+//     link.rel = 'stylesheet';
+//     link.href = 'safari.css';
+//     document.head.appendChild(link);
+//     const styles = document.getElementById('styles')
+//     console.log(styles)
+//     document.head.removeChild(styles)
+// }
 
-const timeElement = document.getElementById('time')
+const timeElements = document.getElementsByClassName('timeValue')
 const targetDate = new Date("2023-11-10T00:00:00Z").getTime()
 
 function setTime() {
@@ -16,8 +19,13 @@ function setTime() {
     const hours = `${Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))}`
     const minutes = `${Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60))}`
 
-    timeElement.innerHTML = `${days.length === 1 ? '0' + days : days} : ${hours.length === 1 ? '0' + hours : hours} : ${minutes.length === 1 ? '0' + minutes : minutes}`
+    timeElements[0].innerHTML = ` ${days.length === 1 ? '0' + days : days} <p class="timeLabel">Дней</p>`
+    timeElements[1].innerHTML = ` ${hours.length === 1 ? '0' + hours : hours} <p class="timeLabel">Часов</p>`
+    timeElements[2].innerHTML = ` ${minutes.length === 1 ? '0' + minutes : minutes} <p class="timeLabel">Минут</p>`
+
+
 }
+
 
 setTime()
 
@@ -222,13 +230,13 @@ nextPartnerBtn.addEventListener('click', () => {
 
 const menuBtn = document.getElementById('mobileMenuIcon')
 const menu = document.getElementById('mobileMenu')
-const closeMenuContainer = document.getElementById('closeMenuContainer')
+// const closeMenuContainer = document.getElementById('closeMenuContainer')
 
 
 
 menuBtn.addEventListener('click', () => {
     menu.style.transition = '.2s'
-    closeMenuContainer.style.display = 'block'
+    // closeMenuContainer.style.display = 'block'
     menu.style.display = 'flex'
     setTimeout(() => {
         menu.style.opacity = '1'
@@ -236,15 +244,15 @@ menuBtn.addEventListener('click', () => {
 
 })
 
-closeMenuContainer.addEventListener('click', () => {
-    menu.style.opacity = '0'
-    closeMenuContainer.style.display = 'none'
-
-    setTimeout(() => {
-        menu.style.display = 'none'
-    },200)
-
-})
+// closeMenuContainer.addEventListener('click', () => {
+//     menu.style.opacity = '0'
+//     closeMenuContainer.style.display = 'none'
+//
+//     setTimeout(() => {
+//         menu.style.display = 'none'
+//     },200)
+//
+// })
 
 
 
@@ -317,7 +325,7 @@ const mobileMenuItems = document.getElementsByClassName('mobileMenuItem')
 for (let href of mobileMenuItems) {
     href.addEventListener('click', () => {
         menu.style.opacity = '0'
-        closeMenuContainer.style.display = 'none'
+        //closeMenuContainer.style.display = 'none'
         setTimeout(() => {
             menu.style.display = 'none'
         },200)

@@ -35,7 +35,7 @@ body {
     align-items: center;
     justify-content: space-around;
     border-bottom: 1px solid #2F313E;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 3;
@@ -133,28 +133,26 @@ body {
 .mainBlockSvgLinesLeft {
     position: absolute;
     z-index: -1;
-    left: -9rem;
-    top: -30rem;
-    height: 140rem;
-    width: 160rem;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 125rem;
 }
 
 .mainBlockSvgLinesRight {
-    height: 140rem;
-    width: 160rem;
     position: absolute;
-    top: -20rem;
-    right: -27rem;
+    top: 0;
+    right: 0;
     z-index: -1;
+    width: 100rem;
 }
 
-.svgPoints {
+.mainBlockSvgPoints {
     position: absolute;
-    width: 26.5rem;
-    height: 11.5rem;
-    top: 23rem;
-    left: 89rem;
+    top: 34rem;
+    right: 6rem;
     z-index: -1;
+    width: 23.5rem;
 
 }
 
@@ -162,16 +160,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 91vh;
+    /*justify-content: center;*/
+    height: 92vh;
+    padding-top: 6rem;
     width: 100%;
 }
 
 
 .mainBlockTitle {
-    margin-top: 13.75rem;
+    margin-top: 13.3rem;
     color: #B8FE4E;
-    font-size: 5rem;
+    font-size: 4.7rem;
     font-style: normal;
     font-weight: 700;
     line-height: 1.75rem; /* 43.75% */
@@ -182,11 +181,11 @@ body {
     color: #FAFBF7;
     /* подзаголовок */
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: 3rem; /* 150% */
-    margin: 2.25rem 0 0 0;
+    margin: 3rem 0 0 0;
     height: 3rem;
 }
 
@@ -208,7 +207,7 @@ body {
     text-align: center;
     /* подзаголовок */
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
     line-height: 3rem; /* 150% */
@@ -227,7 +226,7 @@ body {
 
 .mainBlockButtons {
     display: flex;
-    margin-top: 4.12rem;
+    margin-top: 4.4rem;
 }
 
 .greenBtn {
@@ -287,8 +286,17 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 3rem; /* 150% */
-    margin-top: 6.44rem;
     margin-bottom: 0;
+}
+
+.timerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 13rem;
+    position: absolute;
+    bottom: 3.94rem
 }
 
 .timeToStart {
@@ -298,13 +306,38 @@ body {
     font-weight: 700;
     line-height: 1.75rem;
     margin: 1.25rem 0 0 0;
+    width: 35rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    /*border: 1px solid red;*/
 }
 
 .timeLabels {
     display: flex;
-    justify-content: space-between;
-    width: 24rem;
+    justify-content: center;
+    width: 35rem;
+    /*border: 1px solid red;*/
+
 }
+
+.timeValue {
+
+    width: auto;
+    height: 4rem;
+    text-align: center;
+    position: relative;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+
+
+}
+
+
 
 .timeLabel {
     color: #FAFBF7;
@@ -313,7 +346,16 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 2.375rem; /* 158.333% */
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
 }
+
+
 
 .description {
     background: #FAFBF7;
@@ -321,6 +363,37 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
+}
+
+.descriptionSvgLines {
+    right: 0;
+    position: absolute;
+    z-index: 0;
+    width: 125rem;
+    height: 140rem;
+    bottom: 0;
+}
+
+.descriptionSvgStar {
+    position: absolute;
+    top: 0;
+    left: 40rem;
+    z-index: 0;
+    width: 50rem;
+}
+
+.descriptionSvgDots1 {
+    position: absolute;
+    top: 42rem;
+    left: 5rem;
+    width: 35rem;
+}
+
+.descriptionSvgDots2 {
+    position: absolute;
+    top: 91rem;
+    right: 8rem;
+    width: 35rem;
 }
 
 .descriptionSvgPoints1 {
@@ -427,21 +500,20 @@ body {
     height: 85rem;
 }
 
-.prizeSquareSvg {
+.prizesStar {
     position: absolute;
-    width: 80rem;
-    height: 80rem;
-    top: -5rem;
-    left: 10rem;
-    z-index: -1;
+    bottom: 0;
+    left: 3rem;
+    width: 90rem;
+    height: 90rem;
 }
+
+
 
 .prizeDotsSvg {
     position: absolute;
-    z-index: -1;
-    top: 28rem;
-    right: 6.81rem;
-    width: 26.5rem;
+    top: 30rem;
+    right: 4rem;
 
 }
 
@@ -590,24 +662,23 @@ body {
     position: relative;
     z-index: -2;
     overflow-x: hidden;
-
 }
 
 .timetableSvgLines1 {
     position: absolute;
+    top: 0;
     width: 125rem;
-    height: 140rem;
+    height: 160rem;
+    right: 0;
     z-index: -1;
-    top: 0rem;
 }
 
-.timetableDotsSvg1 {
+.timetableSvgDots {
     position: absolute;
-    width: 100%;
+    top: 5rem;
+    right: 40rem;
     z-index: -1;
-    top: 0rem;
-    left: 4rem;
-    height: 11.5rem;
+    height: 12rem;
 }
 
 .timetableSvgLinesMobile1 {
@@ -616,10 +687,21 @@ body {
 
 .timetableSvgLines2 {
     position: absolute;
-    width: 140rem;
-    height: 140rem;
-    top: 16.57rem;
+    bottom: 0;
+    right: 0;
+    width: 125rem;
+    height: 125rem;
     z-index: -1;
+}
+
+.timetableSvgSquare {
+    position: absolute;
+    bottom: 17rem;
+    left: 22rem;
+    width: 35rem;
+    height: 35rem;
+    z-index: -1;
+
 }
 
 .timetableSquareSvg1 {
@@ -634,15 +716,16 @@ body {
 
 .svgLine {
     position: absolute;
-    top: 15.19rem;
-    left: 35.5rem;
-    height: 128.75rem;
+    top: 18.19rem;
+    left: 35.4rem;
+    height: 128rem;
+
 }
 
 .timetableTitle {
     color: #B8FE4E;
     margin: 0 0 6.5rem 0;
-    padding-top: 5rem;
+    padding-top: 10rem;
     padding-left: 13.13rem;
     /* заголовок обычный */
     font-size: 3rem;
@@ -759,6 +842,34 @@ body {
     line-height: 2rem;
 }
 
+#timetableBlockDescription4 {
+    width: 50rem;
+    color: #FAFBF7;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    /* текст мелкий */
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+#timetableBlockDescription44 {
+    margin-top: .5rem;
+    width: 50rem;
+    color: #FAFBF7;
+
+    /* текст мелкий */
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+
+
 .greenCircle {
     width: 0.5rem;
     height: 0.5rem;
@@ -791,10 +902,11 @@ body {
 
 .expertsSvgLines1 {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
+    top: 10rem;
+    height: 73rem;
     width: 125rem;
-    height: 80rem;
-    overflow: hidden;
+
 
 }
 
@@ -807,30 +919,37 @@ body {
     right: 13.13rem;
 }
 
+.expertsSvgDots1 {
+    position: absolute;
+    top: 81.5rem;
+    right: 13.13rem;
+    width: 30rem;
+}
+
 .expertsSvgLines2 {
     position: absolute;
-    z-index: -1;
-    top: 98rem;
+    top: 100rem;
     width: 125rem;
-    height: 80rem;
+    left: 0;
+    z-index: 0;
+}
+
+.expertsSvgDots2 {
+    position: absolute;
+    bottom: 131rem;
+    width: 25rem;
+    left: 10rem;
 }
 
 .expertsSvgLines3 {
     position: absolute;
-    z-index: -1;
-    top: 155rem;
-    left: -40rem;
-    width: 200rem;
-    height: 100rem;
+    top: 140rem;
+    width: 125rem;
+    height: 140rem;
+    z-index: 1;
 }
 
-.expertsSvgLines4 {
-    position: absolute;
-    z-index: -1;
-    top: 240rem;
-    width: 165rem;
-    height: 100rem;
-}
+
 
 .expertsTitle {
     color: #0C0E1F;
@@ -847,6 +966,7 @@ body {
 .expert {
     display: flex;
     flex-direction: column;
+    z-index: 2;
 
 }
 
@@ -900,6 +1020,7 @@ body {
     font-weight: 500;
     line-height: 1.75rem; /* 58.333% */
     margin-bottom: 6rem;
+    z-index: 10;
 }
 
 .partnersRow {
@@ -915,6 +1036,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 10;
 
 }
 
@@ -948,12 +1070,23 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 1.75rem; /* 58.333% */
+    z-index: 2;
 }
 
 .questions {
     display: flex;
     flex-direction: column;
     margin-left: 13.13rem;
+}
+
+.questionSvgLines {
+    position: absolute;
+    bottom: 15rem;
+    left: 0;
+    width: 125rem;
+    height: 50rem;
+    z-index: 0;
+
 }
 
 .question {
@@ -974,6 +1107,10 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+}
+
+.question:last-child {
+    margin-bottom: 10rem;
 }
 
 
@@ -1242,24 +1379,21 @@ body {
     }
 
     .mobileMenu {
-        position: absolute;
-        top: .9rem;
-        width: 14.5rem;
-        background: #0C0E1F;
-        padding: 1.5rem 0;
-        border: 1px solid #2F313E;
-        right: .9rem;
-        border-radius: 2rem;
-        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(51, 51, 51, 0.9); /* Semi-transparent background */
+        backdrop-filter: blur(1rem);
+        z-index: 10;
+        display: flex;
         flex-direction: column;
-        align-items: end;
-        opacity: 0;
-        z-index: 3;
     }
 
     .mobileMenuItem {
         color: #FAFBF7;
-        text-align: right;
+        text-align: left;
         font-size: 1rem;
         font-style: normal;
         font-weight: 500;
@@ -1268,7 +1402,6 @@ body {
         padding: 0.6rem 1.5rem;
         margin-right: 1.25rem;
         border-radius: 2.5rem;
-        border: 1px solid #0C0E1F;
         text-decoration: none;
         transition: .2s;
     }
@@ -1838,7 +1971,7 @@ body {
     }
 
     .timetableBlockDescription {
-        font-size: 0.6rem;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 400;
         line-height: 1.25rem; /* 142.857% */
@@ -1847,13 +1980,13 @@ body {
 
     #timetableBlockDescription2 {
         width: 17rem;
-        font-size: .4rem;
+        font-size: 1rem;
         font-weight: 300;
     }
 
     #timetableBlockDescription3 {
         width: 17rem;
-        font-size: .4rem;
+        font-size: 1rem;
         font-weight: 300;
         /*line-height: 1rem;*/
     }
@@ -1880,9 +2013,10 @@ body {
         font-style: normal;
         font-weight: 300;
         line-height: 20px; /* 142.857% */
-        font-size: .38rem;
+        font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
         width: 100%;
+        margin-bottom: 0rem;
 
     }
     #timetableBlockDescription42 {
@@ -1890,7 +2024,7 @@ body {
         font-style: normal;
         font-weight: 300;
         line-height: 20px; /* 142.857% */
-        font-size: .38rem;
+        font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
         width: 100%;
 
@@ -1900,7 +2034,7 @@ body {
         font-style: normal;
         font-weight: 300;
         line-height: 20px; /* 142.857% */
-        font-size: .38rem;
+        font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
         width: 100%;
     }
@@ -1910,9 +2044,10 @@ body {
         font-style: normal;
         font-weight: 300;
         line-height: 20px; /* 142.857% */
-        font-size: .38rem;
+        font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
         width: 100%;
+        margin-bottom: 0;
     }
 
     #timetableBlockDescription44 {
@@ -1920,7 +2055,7 @@ body {
         font-style: normal;
         font-weight: 300;
         line-height: 20px; /* 142.857% */
-        font-size: .8rem;
+        font-size: 1rem;
         height: 1rem;
         font-family: 'Montserrat', sans-serif;
         width: 100%;
@@ -1945,7 +2080,8 @@ body {
     }
 
     #timetableBlockDescription4Label {
-        font-size: inherit;
+        font-size: 1rem;
+        margin-bottom: 10rem;
     }
 
 
@@ -1984,7 +2120,7 @@ body {
         left: 1.3rem;
         top: 12rem;
         width: 2rem;
-        height: 121rem;
+        height: 112rem;
     }
 
 
