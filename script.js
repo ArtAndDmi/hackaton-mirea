@@ -1,27 +1,15 @@
-//participateBtn
-//footerGreenBtn
-//greenBtn
+
+
 
 document.getElementById('participateBtn').addEventListener('click', function () {
-    // Здесь вы можете указать другой URL
-    const newURL = 'https://www.yandex.com'
-
-    // Откроем новую ссылку в текущем окне браузера
-    window.location.href = newURL
+    window.location.href = 'https://www.yandex.com'
 })
 document.getElementById('footerGreenBtn').addEventListener('click', function () {
-    // Здесь вы можете указать другой URL
-    const newURL = 'https://www.yandex.com'
-
-    // Откроем новую ссылку в текущем окне браузера
-    window.location.href = newURL
+    window.location.href = 'https://www.yandex.com'
 })
 document.getElementById('footerGreenBtn').addEventListener('click', function () {
-    // Здесь вы можете указать другой URL
-    const newURL = 'https://www.yandex.com'
-
     // Откроем новую ссылку в текущем окне браузера
-    window.location.href = newURL
+    window.location.href = 'https://www.yandex.com'
 })
 
 
@@ -321,22 +309,10 @@ menuBtn.addEventListener('click', () => {
     }
 
 
-    // firstLine.setAttribute("transform", "rotate(90deg)");
-    // menu.style.transition = '.2s'
-    // // closeMenuContainer.style.display = 'block'
 
 
 })
 
-// closeMenuContainer.addEventListener('click', () => {
-//     menu.style.opacity = '0'
-//     closeMenuContainer.style.display = 'none'
-//
-//     setTimeout(() => {
-//         menu.style.display = 'none'
-//     },200)
-//
-// })
 
 
 const questionsBodies = [
