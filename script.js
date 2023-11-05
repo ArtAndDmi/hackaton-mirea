@@ -1,12 +1,29 @@
-// if (/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)) {
-//     const link = document.createElement('link');
-//     link.rel = 'stylesheet';
-//     link.href = 'safari.css';
-//     document.head.appendChild(link);
-//     const styles = document.getElementById('styles')
-//     console.log(styles)
-//     document.head.removeChild(styles)
-// }
+//participateBtn
+//footerGreenBtn
+//greenBtn
+
+document.getElementById('participateBtn').addEventListener('click', function () {
+    // Здесь вы можете указать другой URL
+    const newURL = 'https://www.yandex.com'
+
+    // Откроем новую ссылку в текущем окне браузера
+    window.location.href = newURL
+})
+document.getElementById('footerGreenBtn').addEventListener('click', function () {
+    // Здесь вы можете указать другой URL
+    const newURL = 'https://www.yandex.com'
+
+    // Откроем новую ссылку в текущем окне браузера
+    window.location.href = newURL
+})
+document.getElementById('footerGreenBtn').addEventListener('click', function () {
+    // Здесь вы можете указать другой URL
+    const newURL = 'https://www.yandex.com'
+
+    // Откроем новую ссылку в текущем окне браузера
+    window.location.href = newURL
+})
+
 
 const timeElements = document.getElementsByClassName('timeValue')
 const targetDate = new Date("2023-11-10T00:00:00Z").getTime()
@@ -104,8 +121,7 @@ activeExpertName.style.transition = '.5s'
 const activeExpertDescription = document.getElementById('expertDescriptionMobile')
 activeExpertDescription.style.transition = '.5s'
 let activeExpertCounter = 0
-const expertDots= document.getElementsByClassName('expertDotsMobile')[0]
-
+const expertDots = document.getElementsByClassName('expertDotsMobile')[0]
 
 
 const prevExpertBtn = document.getElementById('leftArrow')
@@ -209,7 +225,7 @@ activePartnerImg.style.transition = '.5s'
 const activePartnerDescription = document.getElementById('partnerDescriptionMobile')
 activePartnerDescription.style.transition = '.5s'
 let activePartnerCounter = 0
-const partnerDots= document.getElementsByClassName('partnerDotsMobile')[0]
+const partnerDots = document.getElementsByClassName('partnerDotsMobile')[0]
 
 const prevPartnerBtn = document.getElementById('partnerLeftArrow')
 prevPartnerBtn.addEventListener('click', () => {
@@ -305,7 +321,6 @@ menuBtn.addEventListener('click', () => {
     }
 
 
-
     // firstLine.setAttribute("transform", "rotate(90deg)");
     // menu.style.transition = '.2s'
     // // closeMenuContainer.style.display = 'block'
@@ -322,7 +337,6 @@ menuBtn.addEventListener('click', () => {
 //     },200)
 //
 // })
-
 
 
 const questionsBodies = [
@@ -364,7 +378,7 @@ for (let i = 0; i < questions.length; i++) {
             questions[i].style.height = window.innerWidth > 767 ? '13rem' : '18rem'
             answers[i].style.opacity = '0'
             svg.style.transform = 'rotate(90deg)'
-            vertLine.style.display  ='none'
+            vertLine.style.display = 'none'
 
             answers[i].innerText = questionsBodies[i].answer
             answers[i].style.display = 'block'
@@ -380,8 +394,7 @@ for (let i = 0; i < questions.length; i++) {
             answers[i].style.opacity = '0'
             answers[i].style.height = '0'
             svg.style.transform = 'rotate(0deg)'
-            vertLine.style.display  ='block'
-
+            vertLine.style.display = 'block'
 
 
             setTimeout(() => {
@@ -414,7 +427,7 @@ for (let href of mobileMenuItems) {
         //closeMenuContainer.style.display = 'none'
         setTimeout(() => {
             menu.style.display = 'none'
-        },200)
+        }, 200)
     })
 }
 
