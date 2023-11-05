@@ -104,6 +104,8 @@ activeExpertName.style.transition = '.5s'
 const activeExpertDescription = document.getElementById('expertDescriptionMobile')
 activeExpertDescription.style.transition = '.5s'
 let activeExpertCounter = 0
+const expertDots= document.getElementsByClassName('expertDotsMobile')[0]
+
 
 
 const prevExpertBtn = document.getElementById('leftArrow')
@@ -114,6 +116,15 @@ prevExpertBtn.addEventListener('click', () => {
         activeExpertCounter--
 
     }
+
+    for (let i = 0; i < expertDots.children.length; i++) {
+        if (i === activeExpertCounter) {
+            expertDots.children[i].setAttribute('fill', '#0C0E1F')
+        } else {
+            expertDots.children[i].setAttribute('fill', '#E6E7E5')
+        }
+    }
+
     activeExpertImg.style.opacity = '0'
     activeExpertName.style.opacity = '0'
     activeExpertDescription.style.opacity = '0'
@@ -135,6 +146,15 @@ nextExpertBtn.addEventListener('click', () => {
     } else {
         activeExpertCounter++
     }
+
+    for (let i = 0; i < expertDots.children.length; i++) {
+        if (i === activeExpertCounter) {
+            expertDots.children[i].setAttribute('fill', '#0C0E1F')
+        } else {
+            expertDots.children[i].setAttribute('fill', '#E6E7E5')
+        }
+    }
+
     activeExpertImg.style.opacity = '0'
     activeExpertName.style.opacity = '0'
     activeExpertDescription.style.opacity = '0'
@@ -151,8 +171,8 @@ nextExpertBtn.addEventListener('click', () => {
 
 const partners = [
     {
-        img: './img/arenadata.png',
-        description: 'Ведущий российский разработчик платформ сбора и хранения данных для компаний, которые хотят изменить бизнес с помощью цифровизации процессов и сложной аналитики, основанной на использовании Big Data.',
+        img: './img/kaspersky.png',
+        description: 'Мы разрабатываем комплексные IT системы для вашего бизнеса, оцифровываем все бизнес-процессы, переводя их в единую информационную систему. Это делает управление компанией прозрачным и позволяет собственникам и руководству принимать решения, опираясь на реальные цифровые показатели — а не на домыслы и составленные вручную отчёты.',
     },
     {
         img: './img/yandex.png',
@@ -175,8 +195,8 @@ const partners = [
         description: 'Мы разрабатываем комплексные IT системы для вашего бизнеса, оцифровываем все бизнес-процессы, переводя их в единую информационную систему. Это делает управление компанией прозрачным и позволяет собственникам и руководству принимать решения, опираясь на реальные цифровые показатели — а не на домыслы и составленные вручную отчёты.',
     },
     {
-        img: './img/kaspersky.png',
-        description: 'Мы разрабатываем комплексные IT системы для вашего бизнеса, оцифровываем все бизнес-процессы, переводя их в единую информационную систему. Это делает управление компанией прозрачным и позволяет собственникам и руководству принимать решения, опираясь на реальные цифровые показатели — а не на домыслы и составленные вручную отчёты.',
+        img: './img/arenadata.png',
+        description: 'Ведущий российский разработчик платформ сбора и хранения данных для компаний, которые хотят изменить бизнес с помощью цифровизации процессов и сложной аналитики, основанной на использовании Big Data.',
     },
     {
         img: './img/communigate.png',
@@ -189,7 +209,7 @@ activePartnerImg.style.transition = '.5s'
 const activePartnerDescription = document.getElementById('partnerDescriptionMobile')
 activePartnerDescription.style.transition = '.5s'
 let activePartnerCounter = 0
-
+const partnerDots= document.getElementsByClassName('partnerDotsMobile')[0]
 
 const prevPartnerBtn = document.getElementById('partnerLeftArrow')
 prevPartnerBtn.addEventListener('click', () => {
@@ -199,6 +219,15 @@ prevPartnerBtn.addEventListener('click', () => {
         activePartnerCounter--
 
     }
+
+    for (let i = 0; i < partnerDots.children.length; i++) {
+        if (i === activePartnerCounter) {
+            partnerDots.children[i].setAttribute('fill', '#0C0E1F')
+        } else {
+            partnerDots.children[i].setAttribute('fill', '#E6E7E5')
+        }
+    }
+
     activePartnerImg.style.opacity = '0'
     activePartnerDescription.style.opacity = '0'
     setTimeout(() => {
@@ -218,6 +247,15 @@ nextPartnerBtn.addEventListener('click', () => {
         activePartnerCounter++
 
     }
+
+    for (let i = 0; i < partnerDots.children.length; i++) {
+        if (i === activePartnerCounter) {
+            partnerDots.children[i].setAttribute('fill', '#0C0E1F')
+        } else {
+            partnerDots.children[i].setAttribute('fill', '#E6E7E5')
+        }
+    }
+
     activePartnerImg.style.opacity = '0'
     activePartnerDescription.style.opacity = '0'
     setTimeout(() => {

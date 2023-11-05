@@ -21,6 +21,15 @@ body {
 
 }
 
+button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+
 .mainBlockSvgLinesRightMobile {
     display: none;
 }
@@ -115,10 +124,10 @@ body {
     align-items: center;
     justify-content: space-around;
     border-bottom: 1px solid #2F313E;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 4;
 
 
 }
@@ -301,6 +310,7 @@ body {
 }
 
 .greenBtn {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     color: #0C0E1F;
     font-family: 'DrukWideCyr-Bold', sans-serif;
     border: none;
@@ -330,7 +340,8 @@ body {
     border-radius: 2.5rem;
     border: 1px solid #B8FE4E;
     background: rgba(12, 14, 31, 0.10);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(.1rem);
+    -webkit-backdrop-filter: blur(.1rem);
     color: #B8FE4E;
     text-align: center;
     font-size: 1.5rem;
@@ -343,10 +354,14 @@ body {
     transition: .2s;
 }
 
+.transparentBtn::before {
+    backdrop-filter: blur(.1rem);
+
+}
+
 .transparentBtn:hover {
     color: #0C0E1F;
     background: #B8FE4E;
-
 }
 
 .mainBlockDateLabel {
@@ -509,6 +524,8 @@ body {
     position: relative;
 }
 
+
+
 .descriptionImg {
     width: 43.625rem;
     height: 32.625rem;
@@ -615,10 +632,16 @@ body {
     border-radius: 2.5rem;
     border: 1px solid #B8FE4E;
     /*background: t;*/
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(.1rem);
+    -webkit-backdrop-filter: blur(.1rem);
+
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.firstPlace::before {
+    backdrop-filter: blur(.1rem);
 
 }
 
@@ -665,11 +688,18 @@ body {
     border-radius: 2.14588rem;
     border: 1px solid #B8FE4E;
     background: rgba(12, 14, 31, 0.01);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(.1rem);
+    -webkit-backdrop-filter: blur(.1rem);
+
     margin-left: 2.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.prizePlace::before {
+    -webkit-backdrop-filter: blur(.1rem);
+
 }
 
 .secondPlaceStar {
@@ -786,7 +816,7 @@ body {
     position: absolute;
     top: 18.19rem;
     left: 35.4rem;
-    height: 128rem;
+    height: 125.8rem;
 
 }
 
@@ -830,8 +860,13 @@ body {
     border-radius: 2.5rem;
     border: 1px solid #B8FE4E;
     background: rgba(12, 14, 31, 0.10);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(.1rem);
+    -webkit-backdrop-filter: blur(.1rem);
     width: 5rem;
+}
+
+.dateTypeOnline::before {
+    backdrop-filter: blur(.1rem);
 }
 
 .dateTypeOffline {
@@ -849,8 +884,16 @@ body {
     border-radius: 2.5rem;
     border: 1px solid #FAFBF7;
     background: rgba(12, 14, 31, 0.10);
-    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(.1rem);
+    backdrop-filter: blur(.1rem);
 }
+
+.dateTypeOffline::before {
+    backdrop-filter: blur(.1rem);
+
+}
+
+
 
 .timetableBlockTitle {
     color: #FAFBF7;
@@ -1086,7 +1129,17 @@ body {
     font-weight: 500;
     line-height: 1.75rem; /* 58.333% */
     margin-bottom: 6rem;
-    z-index: 10;
+    z-index: 2;
+}
+
+#partnersTitle {
+    position: absolute;
+    top: 122rem;
+}
+
+.partnersContainer {
+    height: auto;
+    margin-top: 20rem;
 }
 
 .partnersRow {
@@ -1102,8 +1155,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 10;
-
+    z-index: 2;
 }
 
 .partnerMobile {
@@ -1136,8 +1188,12 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 1.75rem; /* 58.333% */
-    border: 1px solid red;
-    z-index: 10
+    z-index: 2;
+}
+
+#faqTitle {
+    position: absolute;
+    top: 255rem;
 }
 
 
@@ -1145,6 +1201,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 13.13rem;
+    margin-top: 20rem;
     z-index: 0;
 }
 
@@ -1165,7 +1222,8 @@ body {
     border: 1px solid #0C0E1F;
     border-radius: 2rem;
     background: rgba(250, 251, 247, 0.01);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(.1rem);
+    -webkit-backdrop-filter: blur(.1rem);
     margin-bottom: 1.5rem;
     transition: .2s;
     padding: 1.5rem;
@@ -1177,6 +1235,10 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+}
+
+.question::before {
+    backdrop-filter: blur(.1rem);
 }
 
 .question:last-child {
@@ -1352,7 +1414,8 @@ body {
     border-radius: 2.5rem;
     border: 1px solid #B8FE4E;
     background: rgba(12, 14, 31, 0.10);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(.1rem);
+    -webkit-backdrop-filter: blur(.1rem);
     height: 3.25rem;
     color: #B8FE4E;
     text-align: center;
@@ -1365,19 +1428,22 @@ body {
     margin-top: 2rem;
     transition: .2s;
     cursor: pointer;
-
 }
 
-.footerBorderedButton:hover {
-    background: #B8FE4E;
-    color: #0C0E1F;
+.footerBorderedButton::before {
+    backdrop-filter: blur(.1rem);
+}
 
+.footerBorderedButton:active {
+    color: #0C0E1F;
+    background: #B8FE4E;
 }
 
 .hrefTg {
     color: inherit;
     text-decoration: none;
 }
+
 
 
 .footerHrefs {
@@ -1711,6 +1777,8 @@ body {
         cursor: pointer;
         z-index: 20;
         margin-right: 1.25rem;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
     }
 
     .mobileMenu {
@@ -1731,8 +1799,6 @@ body {
     }
 
     .mobileMenu::before {
-        width: 100%;
-        height: 100%;
         backdrop-filter: blur(1rem);
     }
 
@@ -1749,6 +1815,8 @@ body {
         text-decoration: none;
         border: 1px solid transparent;
         transition: .2s;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
 
     }
 
@@ -1779,6 +1847,7 @@ body {
         text-transform: uppercase;
         border: none;
         cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 
     .mobileMenuTgButton {
@@ -1792,13 +1861,16 @@ body {
         justify-content: center;
         transition: .2s;
         cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 
-    .mobileMenuTgButton:hover {
+
+
+    .mobileMenuTgButton:active {
         background: #B8FE4E;
     }
 
-    .mobileMenuTgButton:hover svg path {
+    .mobileMenuTgButton:active svg path {
         fill: #0C0E1F;
     }
 
@@ -1925,7 +1997,7 @@ body {
         display: flex;
         align-items: start;
         top: 8rem;
-        left: 0;
+        left: 1rem;
         width: 100%;
     }
 
@@ -2026,6 +2098,10 @@ body {
         width: 24rem;
         height: 17.875rem;
         border-radius: 2rem;
+        margin-left: 0;
+    }
+    .descriptionImgContainer2 {
+        margin-left: -1rem;
     }
 
     .descriptionImg {
@@ -2092,12 +2168,12 @@ body {
 
     #descriptionBlock2 {
         flex-direction: column-reverse;
-        margin-left: 1rem;
+        margin-left: 0rem;
         font-size: inherit;
     }
 
     #descriptionBlockText2 {
-        margin-left: 0;
+        margin-left: 1rem;
     }
 
     .descriptionParagraphContainer {
@@ -2190,8 +2266,13 @@ body {
         height: 7.82844rem;
         border-radius: 1.42338rem;
         background: rgba(12, 14, 31, 0.01);
-        backdrop-filter: blur(1.0294268131256104px);
+        backdrop-filter: blur(.1rem);
+        -webkit-backdrop-filter: blur(.1rem);
         margin-left: 0;
+    }
+
+    #prizePlace2::before {
+        backdrop-filter: blur(.1rem);
     }
 
     #prizePlaceLabel2 {
@@ -2229,8 +2310,13 @@ body {
         margin-left: 0;
         border-radius: 1.42338rem;
         background: rgba(12, 14, 31, 0.01);
-        backdrop-filter: blur(0.8860241174697876px);
+        backdrop-filter: blur(.1rem);
+        -webkit-backdrop-filter: blur(.1rem);
         margin-top: 1rem;
+    }
+
+    #prizePlace3::before {
+        backdrop-filter: blur(.1rem);
     }
 
     #prizePlaceLabel3 {
@@ -2520,7 +2606,7 @@ body {
         left: 1.3rem;
         top: 12rem;
         width: 2rem;
-        height: 116rem;
+        height: 118rem;
         z-index: 1;
     }
 
@@ -2585,6 +2671,26 @@ body {
         margin-left: 1.25rem;
         position: relative;
         height: 35rem;
+        margin-bottom: 10rem;
+    }
+
+    .expertDotsMobile {
+        height: .5rem;
+        position: absolute;
+        top: 36rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .expertDotsMobile circle {
+        transition: .2s;
+    }
+
+
+
+    #partnersTitle {
+        top: 45rem;
     }
 
     #activeExpertImg {
@@ -2641,6 +2747,19 @@ body {
         border: 1px solid #8A8D96;
         background: #FAFBF7;
         z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #LeftArrowIcon {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    #RightArrowIcon {
+        width: 1rem;
+        height: 1rem;
     }
 
     #rightArrow {
@@ -2653,7 +2772,13 @@ body {
         border: 1px solid #8A8D96;
         background: #FAFBF7;
         z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .partnersContainer {
+        display: none;
     }
 
     .partnersTitle {
@@ -2674,6 +2799,19 @@ body {
         display: block;
         position: relative;
         height: 18rem;
+    }
+
+    .partnerDotsMobile {
+        height: .5rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 1rem;
+    }
+
+    .partnerDotsMobile circle {
+        transition: .2s;
     }
 
     .partnerImg {
@@ -2702,6 +2840,14 @@ body {
         border: 1px solid #8A8D96;
         background: #FAFBF7;
         z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #partnerLeftArrowIcon {
+        width: 1rem;
+        height: 1rem;
     }
 
     #partnerRightArrow {
@@ -2714,6 +2860,14 @@ body {
         border: 1px solid #8A8D96;
         background: #FAFBF7;
         z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #partnerRightArrowIcon {
+        width: 1rem;
+        height: 1rem;
     }
 
     .faqTitle {
@@ -2726,8 +2880,14 @@ body {
         line-height: 1.75rem;
     }
 
+    #faqTitle {
+        position: absolute;
+        top: 72rem;
+    }
+
     .questions {
         margin-left: 0;
+        margin-top: 7.75rem;
     }
 
     .question {
@@ -2744,13 +2904,18 @@ body {
         border: 1px solid #0C0E1F;
         border-radius: 2rem;
         background: rgba(250, 251, 247, 0.01);
-        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(.1rem);
+        backdrop-filter: blur(.1rem);
         margin-bottom: 1.5rem;
         transition: .2s;
         height: 5rem;
         cursor: pointer;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         z-index: 2;
+    }
+
+    .question::before {
+        backdrop-filter: blur(.1rem);
     }
 
     .question:active {
@@ -2884,7 +3049,8 @@ body {
         border-radius: 2rem;
         border: 1px solid #B8FE4E;
         background: rgba(12, 14, 31, 0.10);
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(.1rem);
+        -webkit-backdrop-filter: blur(.1rem);
         color: #B8FE4E;
         text-align: center;
         font-size: .9rem;
@@ -2894,6 +3060,10 @@ body {
         line-height: 1.75rem; /* 175% */
         width: 26rem;
 
+    }
+
+    .footerBorderedButton::before {
+        backdrop-filter: blur(.1rem);
     }
 
     .footerHrefs {
