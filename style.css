@@ -624,6 +624,14 @@ a {
     height: 60rem;
 }
 
+.participantSvgLines1Mobile {
+    display: none;
+}
+
+.participantSvgLines2Mobile {
+    display: none;
+}
+
 .participantTitle {
     color: #0C0E1F;
     padding-top: 10rem;
@@ -636,6 +644,10 @@ a {
     font-weight: 500;
     line-height: 1.75rem; /* 58.333% */
     z-index: 2;
+}
+
+#participantTitleMobile {
+    display: none;
 }
 
 .participantBlock {
@@ -982,7 +994,7 @@ a {
     position: absolute;
     top: 18.19rem;
     left: 35.5rem;
-    height: 113.4rem;
+    height: 72%;
 
 }
 
@@ -1399,7 +1411,7 @@ a {
     width: 93.75rem;
     /*padding: 2.25rem 4rem;*/
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 1.5rem;
 }
 
@@ -2355,9 +2367,158 @@ a {
         margin-right: .88rem;
     }
 
+    .participantSvgLines1 {
+        display: none;
+    }
+
+    .participantSvgSquare {
+        display: none;
+    }
+
+    .participantSvgLines2 {
+        display: none;
+    }
+
+    .participantSvgLines1Mobile {
+        display: block;
+        position: absolute;
+        width: 28.5rem;
+        height: 28rem;
+        top: 0;
+
+    }
+
+    .participantSvgLines2Mobile {
+        display: block;
+        position: absolute;
+        width: 28.5rem;
+        height: 23rem;
+        top: 27rem;
+
+    }
+
+    .participantTitle {
+        color: #0C0E1F;
+        margin-left: 0;
+        /* Моб заголовок */
+        font-size: 1.55rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.75rem; /* 116.667% */
+        display: none;
+        margin-bottom: 3rem;
+        padding-top: 3rem;
+    }
+
+    #participantTitleMobile {
+        margin-left: 1rem;
+        display: block;
+    }
+
+    .participantBlock {
+        margin: 2rem auto;
+        width: 18rem;
+        padding: 1.5rem 4rem;
+        border-radius: 20rem 10rem 10rem 20rem;
+    }
+
+    .participantSvg {
+        height: 7rem;
+        width: 7rem;
+        left: 3rem;
+        /*display: none;*/
+    }
+
+    .participantTextContainer {
+        margin-left: 5rem;
+    }
+
+    .participantCount {
+        display: flex;
+        width: 11.89025rem;
+        height: 2.51019rem;
+        padding: 0.5rem 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.33031rem;
+        flex-shrink: 0;
+        border-radius: 3rem;
+        border: 1px solid #2F313E;
+        background: #FAFBF7;
+        color: #2F313E;
+        text-align: center;
+        font-size: 0.79269rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 0.92481rem; /* 116.667% */
+        margin: 0;
+        top: 3.5rem;
+    }
+
+
+    #participantTextContainer2 {
+        width: 15.8rem;
+        margin-left: -2rem;
+    }
+    #participantBlock2 {
+        margin-left: 1rem;
+        border-radius: 10rem 20rem 20rem 10rem;
+
+    }
+
+    #participantSvg2 {
+        height: 7rem;
+        width: 7rem;
+        right: 3rem;
+        /*display: none;*/
+    }
+
+    .participantPopupContainer {
+        display: flex;
+        padding: 0.9375rem 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8125rem;
+        border-radius: 1.56506rem;
+        border: 0.626px solid #0C0E1F;
+        background: #FAFBF7;
+        margin: 3rem 1rem 5rem;
+    }
+
+    .participantPopupTitle {
+        color: #0C0E1F;
+        font-family: Montserrat, sans-serif;
+
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.5rem; /* 171.429% */
+    }
+
+    .participantPopupBody {
+        color: #0C0E1F;
+        font-family: Montserrat, sans-serif;
+        /* Моб мелк текст */
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem; /* 142.857% */
+    }
+
+    .participantText {
+        color: #FAFBF7;
+        text-align: center;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.32113rem; /* 132.114% */
+    }
+
     .prizeContainer {
         height: 65rem;
     }
+
+
 
     .prizeSquareSvg {
         width: 21.39181rem;
@@ -2520,6 +2681,34 @@ a {
         height: 4rem;
     }
 
+    #timetableSvgStar1{
+        padding-top: 2.4rem;
+    }
+    #timetableSvgStar2{
+        padding-top: 3.4rem;
+
+    }
+    #timetableSvgStar3{
+        padding-top: 3.9rem;
+
+    }
+    #timetableSvgStar4{
+        padding-top: 2.9rem;
+
+    }
+    #timetableSvgStar5{
+        padding-top: 2.8rem;
+
+    }
+    #timetableSvgStar6{
+        padding-top: 2.4rem;
+
+    }
+    #timetableSvgStar7{
+        padding-top: 2.8rem;
+
+    }
+
     .prizeDescriptionStarSvg {
         width: 1.5rem;
         height: 1.5rem;
@@ -2579,6 +2768,7 @@ a {
         flex-direction: column;
         width: auto;
         position: relative;
+        margin-bottom: 4rem;
     }
 
     .dateContainer {
@@ -2771,9 +2961,9 @@ a {
 
     .svgLine {
         left: 1.3rem;
-        top: 12rem;
+        top: 13rem;
         width: 2rem;
-        height: 118rem;
+        height: 84%;
         z-index: 1;
     }
 
@@ -2844,7 +3034,7 @@ a {
     .expertDotsMobile {
         height: .5rem;
         position: absolute;
-        top: 36rem;
+        top: 37.5rem;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -2905,10 +3095,10 @@ a {
 
     #leftArrow {
         position: absolute;
-        top: 12.25rem;
-        left: -.55rem;
-        width: 2rem;
-        height: 2rem;
+        top: 104%;
+        left: 3rem;
+        width: 3rem;
+        height: 3rem;
         border-radius: 50%;
         border: 1px solid #8A8D96;
         background: #FAFBF7;
@@ -2918,22 +3108,31 @@ a {
         justify-content: center;
     }
 
+    #leftArrow:active {
+        background: #8A8D96;
+
+    }
+
+    #leftArrow:active svg path {
+        fill: #FAFBF7;
+    }
+
     #LeftArrowIcon {
-        width: 1rem;
-        height: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     #RightArrowIcon {
-        width: 1rem;
-        height: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     #rightArrow {
         position: absolute;
-        top: 12.25rem;
-        right: .55rem;
-        width: 2rem;
-        height: 2rem;
+        top: 104%;
+        right: 3rem;
+        width: 3rem;
+        height: 3rem;
         border-radius: 50%;
         border: 1px solid #8A8D96;
         background: #FAFBF7;
@@ -2948,7 +3147,7 @@ a {
     }
 
     .partnersTitle {
-        margin-top: 6.25rem;
+        margin-top: 9.25rem;
         margin-left: 1.25rem;
         font-size: 1.5rem;
         font-style: normal;
@@ -2962,6 +3161,7 @@ a {
     }
 
     .partnerMobile {
+        margin-top: 15rem;
         display: block;
         position: relative;
         height: 18rem;
@@ -2973,7 +3173,7 @@ a {
         left: 0;
         right: 0;
         margin: 0 auto;
-        bottom: 1rem;
+        top: 19rem;
     }
 
     .partnerDotsMobile circle {
@@ -2998,10 +3198,10 @@ a {
 
     #partnerLeftArrow {
         position: absolute;
-        top: 11%;
-        left: .625rem;
-        width: 2rem;
-        height: 2rem;
+        top: 98%;
+        left: 6rem;
+        width: 3rem;
+        height: 3rem;
         border-radius: 50%;
         border: 1px solid #8A8D96;
         background: #FAFBF7;
@@ -3012,16 +3212,16 @@ a {
     }
 
     #partnerLeftArrowIcon {
-        width: 1rem;
-        height: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     #partnerRightArrow {
         position: absolute;
-        top: 11%;
-        right: .625rem;
-        width: 2rem;
-        height: 2rem;
+        top: 98%;
+        right: 6rem;
+        width: 3rem;
+        height: 3rem;
         border-radius: 50%;
         border: 1px solid #8A8D96;
         background: #FAFBF7;
@@ -3032,13 +3232,13 @@ a {
     }
 
     #partnerRightArrowIcon {
-        width: 1rem;
-        height: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     .faqTitle {
         margin-left: 1.25rem;
-        margin-top: 6rem;
+        margin-top: 14rem;
         margin-bottom: 1.5rem;
         font-size: 1.5rem;
         font-style: normal;
@@ -3053,7 +3253,7 @@ a {
 
     .questions {
         margin-left: 0;
-        margin-top: 7.75rem;
+        margin-top: 11.75rem;
     }
 
     .question {
