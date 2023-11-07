@@ -283,6 +283,7 @@ menuBtn.addEventListener('click', () => {
     firstLine.transition = '.2s'
     secondLine.style.transition = '.2s'
     thirdLine.style.transition = '.2s'
+    document.body.style.overflow = 'hidden'
 
     menuBtn.style.transition = '.2s'
     if (!isCross) {
@@ -302,6 +303,7 @@ menuBtn.addEventListener('click', () => {
 
         menuBtn.style.transform = 'rotate(0deg)'
         isCross = false
+        document.body.style.overflow = 'auto'
         menu.style.opacity = '0'
         setTimeout(() => {
             menu.style.display = 'none'
@@ -399,6 +401,7 @@ for (let href of mobileMenuItems) {
         menuBtn.style.transform = 'rotate(0deg)'
         firstLine.setAttribute('d', 'M10 12H26')
         thirdLine.setAttribute('d', 'M10 24H26')
+        document.body.style.overflow = 'auto'
         isCross = false
         //closeMenuContainer.style.display = 'none'
         setTimeout(() => {
