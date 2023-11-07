@@ -605,7 +605,7 @@ a {
     position: absolute;
     width: 124.9rem;
     height: 40rem;
-    top: 0;
+    bottom: 48rem;
     left: 0;
 }
 
@@ -613,15 +613,17 @@ a {
     position: absolute;
     width: 80rem;
     height: 80rem;
-    top: 5rem;
+    top: 0;
     left: 52rem;
+
 }
 
 .participantSvgLines2 {
     position: absolute;
-    top: 42rem;
+    top: 25rem;
     width: 124.9rem;
-    height: 60rem;
+    height: 70rem;
+
 }
 
 .participantSvgLines1Mobile {
@@ -636,7 +638,7 @@ a {
     color: #0C0E1F;
     padding-top: 10rem;
     margin-left: 13.13rem;
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
     margin-top: 0;
     /* заголовок обычный */
     font-size: 3rem;
@@ -646,6 +648,10 @@ a {
     z-index: 2;
 }
 
+.participantTitle:last-child {
+    margin-bottom: 20rem;
+}
+
 #participantTitleMobile {
     display: none;
 }
@@ -653,7 +659,7 @@ a {
 .participantBlock {
     position: relative;
     background: #0C0E1F;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     text-align: center;
     padding: 2rem 6rem;
     margin-left: 26rem;
@@ -857,6 +863,7 @@ a {
     display: flex;
     margin-top: 2.2rem;
     margin-left: 22rem;
+    margin-bottom: 7rem;
 }
 
 .prizePlace {
@@ -1110,7 +1117,7 @@ a {
     width: 6rem;
     height: 6rem;
     margin-right: 1.5rem;
-    border-radius: 50%;
+    border-radius: 1.76119rem;
 }
 
 .timetableBlockDescriptionContainer {
@@ -1763,15 +1770,18 @@ a {
         height: 10rem;
         width: auto;
         right: 0;
+
     }
 
     .mainBlockSvgLinesBottom {
         display: block;
         position: absolute;
-        top: 0;
+        bottom: 7rem;
         left: 0;
         width: 28.5rem;
         height: 70rem;
+        border: 1px solid red;
+
     }
 
     .descriptionSvgLinesMobile {
@@ -2173,10 +2183,11 @@ a {
     .timerContainer {
         position: absolute;
         display: flex;
-        align-items: start;
+        align-items: center;
         top: 8rem;
-        left: 1rem;
         width: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 
     .mainBlockDateLabel {
@@ -2768,14 +2779,14 @@ a {
         flex-direction: column;
         width: auto;
         position: relative;
-        margin-bottom: 4rem;
+        margin-bottom: 3footrem;
     }
 
     .dateContainer {
         flex-direction: row;
         width: 18rem;
         align-items: center;
-        justify-content: space-between;
+        justify-content: start;
     }
 
     .dateValue {
@@ -2784,6 +2795,7 @@ a {
         font-style: normal;
         font-weight: 600;
         line-height: 1.25rem; /* 125% */
+        margin-right: 1rem;
     }
 
     .dateTypeOnline {
@@ -2792,7 +2804,7 @@ a {
         font-weight: 500;
         line-height: 1.06425rem; /* 170.285% */
         display: flex;
-        padding: 0.375rem 1rem;
+        padding: 0.375rem 0;
         justify-content: center;
         align-items: center;
         gap: 0.625rem;
@@ -3387,7 +3399,7 @@ a {
         font-size: 1rem;
         font-style: normal;
         font-weight: 400;
-        line-height: 1.25rem; /* 125% */
+        line-height: 1.6rem; /* 125% */
         margin-left: 1.25rem;
     }
 
