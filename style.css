@@ -768,7 +768,7 @@ a {
 }
 
 .prizeContainer {
-    height: 85rem;
+    height: 87rem;
 }
 
 .prizesStar {
@@ -941,7 +941,7 @@ a {
 }
 
 .timetableContainer {
-    height: 156.625rem;
+    height: 140rem;
     background: #0C0E1F;
     position: relative;
     z-index: -2;
@@ -1001,8 +1001,8 @@ a {
 .svgLine {
     position: absolute;
     top: 18.19rem;
-    left: 35.4rem;
-    height: 72%;
+    left: 35.5rem;
+    height: 79%;
 
 }
 
@@ -1105,6 +1105,33 @@ a {
     flex-direction: column;
     align-items: end;
     width: 16.625rem;
+}
+
+
+
+#dateContainer1{
+    margin-top: -1.1rem;
+}
+#dateContainer2{
+    margin-top: -1.1rem;
+}
+#dateContainer3{
+    margin-top: -1.1rem;
+}
+#dateContainer4{
+    margin-top: -1.1rem;
+}
+#dateContainer5{
+    margin-top: -1.1rem;
+
+}
+#dateContainer6{
+    margin-top: -1.1rem;
+
+}
+#dateContainer7{
+    margin-top: -1.1rem;
+
 }
 
 .timetableSvgStar {
@@ -1319,7 +1346,8 @@ a {
 
 #partnersTitle {
     position: absolute;
-    top: 122rem;
+    padding-top: 10rem;
+    top: 112rem;
 }
 
 .partnersContainer {
@@ -1379,7 +1407,9 @@ a {
 
 #faqTitle {
     position: absolute;
-    top: 255rem;
+    /*margin-top: -10rem;*/
+    padding-top: 10rem;
+    top: 250rem;
 }
 
 
@@ -2272,9 +2302,13 @@ a {
         height: 8.6875rem;
     }
 
+    .description {
+        align-items: start;
+    }
+
     .descriptionTitle {
         margin-top: 5rem;
-        margin-left: 2.5rem;
+        margin-left: 1.2rem;
         margin-bottom: 1.37rem;
         font-size: 1.5rem;
         font-style: normal;
@@ -2287,13 +2321,14 @@ a {
         justify-content: center;
         align-items: center;
         margin-bottom: 2rem;
+        margin-left: 11rem;
     }
 
     .descriptionImgContainer {
-        width: 24rem;
-        height: 17.875rem;
+        width: 26.5rem;
+        height: 18.875rem;
         border-radius: 2rem;
-        margin-left: 0;
+        margin-left: 2.5rem;
     }
 
     .descriptionImgContainer2 {
@@ -2301,8 +2336,8 @@ a {
     }
 
     .descriptionImg {
-        width: 24rem;
-        height: 17.875rem;
+        width: 26.5rem;
+        height: 18.875rem;
         border-radius: 2rem;
         top: .31rem;
         left: .31rem;
@@ -2310,7 +2345,7 @@ a {
 
     .descriptionBlockTitle {
         color: #0C0E1F;
-        font-size: 1.15rem;
+        font-size: 1.2rem;
         max-width: 100%;
         font-style: normal;
         font-weight: 100;
@@ -2332,7 +2367,7 @@ a {
         font-style: normal;
         font-weight: 400;
         line-height: 1.1rem; /* 142.857% */
-        width: auto;
+        width: 25rem;
     }
 
 
@@ -2364,7 +2399,7 @@ a {
 
     #descriptionBlock2 {
         flex-direction: column-reverse;
-        margin-left: 0rem;
+        margin-left: 11rem;
         font-size: inherit;
     }
 
@@ -2428,6 +2463,7 @@ a {
     }
 
     #participantTitleMobile {
+        padding-top: 5rem;
         margin-left: 1rem;
         display: block;
     }
@@ -2699,30 +2735,30 @@ a {
     }
 
     #timetableSvgStar1{
-        padding-top: 2.4rem;
+        padding-top: 3.8rem;
     }
     #timetableSvgStar2{
-        padding-top: 3.4rem;
+        padding-top: 3.8rem;
 
     }
     #timetableSvgStar3{
-        padding-top: 3.9rem;
+        padding-top: 6.1rem;
 
     }
     #timetableSvgStar4{
-        padding-top: 2.9rem;
+        padding-top: 4.8rem;
 
     }
     #timetableSvgStar5{
-        padding-top: 2.8rem;
+        padding-top: 3rem;
 
     }
     #timetableSvgStar6{
-        padding-top: 2.4rem;
+        padding-top: 3.5rem;
 
     }
     #timetableSvgStar7{
-        padding-top: 2.8rem;
+        padding-top: 3rem;
 
     }
 
@@ -2787,7 +2823,15 @@ a {
         flex-direction: column;
         width: auto;
         position: relative;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .timetableBlock:last-child {
+        margin-bottom: 4rem;
+    }
+
+    #timetableBlock4 {
+        height: 23rem;
     }
 
     .dateContainer {
@@ -2795,6 +2839,32 @@ a {
         width: 18rem;
         align-items: center;
         justify-content: start;
+    }
+
+
+    #dateContainer1{
+        margin-top: 0;
+    }
+    #dateContainer2{
+
+    }
+    #dateContainer3{
+        margin-top: 0;
+
+    }
+    #dateContainer4{
+        margin-top: 0;
+
+    }
+    #dateContainer5{
+
+    }
+    #dateContainer6{
+        margin-top: 0;
+
+    }
+    #dateContainer7{
+
     }
 
     .dateValue {
@@ -2820,11 +2890,11 @@ a {
     }
 
     .timetableBlockTitle {
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-style: normal;
         font-weight: 500;
         line-height: 1.25rem; /* 111.111% */
-        width: 21.4375rem;
+        width: 24rem;
     }
 
     .timetableBlockDescription {
@@ -2858,7 +2928,7 @@ a {
     /*    flex-direction: column;*/
     /*}*/
     #timetableBlockTitle4 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
 
@@ -3069,7 +3139,7 @@ a {
 
 
     #partnersTitle {
-        top: 45rem;
+        top: 35rem;
     }
 
     .partnerContainer {
@@ -3095,7 +3165,7 @@ a {
     }
 
     .expertDescription {
-        width: 24.8rem;
+        width: 100%;
         padding-left: 1.5rem;
     }
 
@@ -3106,8 +3176,12 @@ a {
         line-height: 1.25rem; /* 142.857% */
         width: auto;
         margin-top: 1.25rem;
-        margin-left: .1rem;
+        margin-left: .5rem;
         margin-right: 1.25rem;
+    }
+
+    #golovin {
+        align-self: start;
     }
 
     #expertDescriptionMobile {
@@ -3366,7 +3440,7 @@ a {
 
     #faqTitle {
         position: absolute;
-        top: 81rem;
+        top: 71rem;
     }
 
     .questions {
@@ -3380,7 +3454,7 @@ a {
         margin-right: 1.25rem;
         display: flex;
         width: calc(100% - 2.5rem);
-        padding: 0 1rem 1.3rem 1rem;
+        padding: 0 0rem 1.3rem 1rem;
         flex-direction: column;
         align-items: start;
         justify-content: start;
@@ -3415,6 +3489,7 @@ a {
         width: 18rem;
         padding-top: 1.25rem;
         margin-left: 0;
+        padding-left: 1rem;
     }
 
     .questionHeaderContainer {
@@ -3445,6 +3520,8 @@ a {
         height: 1.5rem;
         margin-right: 0rem;
         margin-top: 1rem;
+        padding-right: 1rem;
+
     }
 
     .footer {
