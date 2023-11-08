@@ -1958,6 +1958,10 @@ a {
         margin-left: 1.25rem;
     }
 
+    .expert {
+        height: 38.5rem;
+    }
+
     .mobileMenuIcon {
         display: block;
         width: 2.5rem;
@@ -2395,7 +2399,7 @@ a {
         display: block;
         position: absolute;
         width: 28.5rem;
-        height: 28rem;
+        height: 33rem;
         top: 0;
 
     }
@@ -2405,7 +2409,7 @@ a {
         position: absolute;
         width: 28.5rem;
         height: 23rem;
-        top: 27rem;
+        top: 26rem;
 
     }
 
@@ -3065,6 +3069,11 @@ a {
         top: 45rem;
     }
 
+    #activeExpert {
+        overflow-x: hidden;
+        border: 1px solid red
+    }
+
     #activeExpertImg {
         transition: .2s;
     }
@@ -3111,7 +3120,7 @@ a {
 
     #leftArrow {
         position: absolute;
-        top: 104%;
+        top: 103%;
         left: 2.4rem;
         width: 3rem;
         height: 3rem;
@@ -3148,8 +3157,8 @@ a {
 
     #rightArrow {
         position: absolute;
-        top: 104%;
-        right: 3.4rem;
+        top: 103%;
+        right: 2.8rem;
         width: 3rem;
         height: 3rem;
         border-radius: 50%;
@@ -3170,6 +3179,27 @@ a {
 
     #rightArrow:active svg path{
         stroke: #FAFBF7;
+    }
+
+    #expertMobileContainer {
+        display: flex;
+        overflow-x: auto;
+
+
+    }
+
+    .expertMobileWrapper {
+        display: flex;
+        overflow-x: hidden;
+
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #8A8D96 !important;
+        width: 10rem;
+    }
+
+    .swiper-pagination {
     }
 
     .partnersContainer {

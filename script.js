@@ -39,140 +39,6 @@ setInterval(() => {
 }, 1000)
 
 
-const experts = [
-    {
-        name: 'Денис Горин',
-        description: 'Заместитель директора Института кибербезопасности и цифровых технологий РТУ МИРЭА, заведующий кафедрой КБ-3 «Безопасность программных решений», кандидат экономических наук, доцент.',
-        src: './img/gorin.png'
-    },
-    {
-        name: 'Вадим Горбатов',
-        description: 'Руководитель студенческого объединения «Школа DevOps», разработчик на Go, багхантер, амбассадор Яндекса.',
-        src: './img/gorbatov.png'
-    },
-    {
-        name: 'Алексей Голобурдин',
-        description: 'Основатель и руководитель компаний Диджитализируй! и Salesbeat, автор YouTube канала и курсов по разработке на Python.',
-        src: './img/goloburdin.png'
-    },
-    {
-        name: 'Кирилл Шмелёв',
-        description: 'Инженер-программист отдела разработки средств защиты информации в компании АНСЕР ПРО.',
-        src: './img/shmelev.png'
-    },
-    {
-        name: 'Сергей Лесько',
-        description: 'Ведущий разработчик Kaspersky Subscription Service, доктор технических наук, автор более 80 научных публикаций.',
-        src: './img/lesko.png'
-    },
-    {
-        name: 'Илья Порсев',
-        description: 'Сертифицированный преподаватель Astra Linux, доцент кафедры КБ-3 «Безопасность программных решений», автор более 20 научных публикаций.',
-        src: './img/porsev.png'
-    },
-    {
-        name: 'Олег Лукьянчиков',
-        description: 'Разработчик на C++/Qt, доцент кафедры КБ-3 «Безопасность программных решений», кандидат технических наук, автор более 30 научных публикаций.',
-        src: './img/lukyanchinkov.png'
-    },
-    {
-        name: 'Дмитрий Яценко',
-        description: 'Сертифицированный тренер-преподаватель компании Arenadata.',
-        src: './img/yachenko.png'
-    },
-    {
-        name: 'Леонид Головин',
-        description: 'Разработчик в Яндекс.Играх.',
-        src: './img/golovin.png'
-    },
-    {
-        name: 'Александр Дворянский',
-        description: 'Директор департамента информационной безопасности и специальных решений Sitronics Group.',
-        src: './img/dvoryanski.png'
-    },
-    {
-        name: 'Никита Котиков',
-        description: 'Специалист по пентесту и анализу защищённости финансового сектора в компании Rad Cop.',
-        src: './img/kotikov.png'
-    },
-    {
-        name: 'Татьяна Егорова',
-        description: 'Веб-дизайнер и независимый эксперт по UX/UI дизайну.',
-        src: './img/Egorova.png'
-    },
-]
-
-const activeExpertImg = document.getElementById('expertImgMobile')
-activeExpertImg.style.transition = '.5s'
-const activeExpertName = document.getElementById('expertNameMobile')
-activeExpertName.style.transition = '.5s'
-const activeExpertDescription = document.getElementById('expertDescriptionMobile')
-activeExpertDescription.style.transition = '.5s'
-let activeExpertCounter = 0
-const expertDots = document.getElementsByClassName('expertDotsMobile')[0]
-
-
-const prevExpertBtn = document.getElementById('leftArrow')
-prevExpertBtn.addEventListener('click', () => {
-    if (activeExpertCounter === 0) {
-        activeExpertCounter = experts.length - 1
-    } else {
-        activeExpertCounter--
-
-    }
-
-    for (let i = 0; i < expertDots.children.length; i++) {
-        if (i === activeExpertCounter) {
-            expertDots.children[i].setAttribute('fill', '#0C0E1F')
-        } else {
-            expertDots.children[i].setAttribute('fill', '#E6E7E5')
-        }
-    }
-
-    activeExpertImg.style.opacity = '0'
-    activeExpertName.style.opacity = '0'
-    activeExpertDescription.style.opacity = '0'
-    setTimeout(() => {
-        activeExpertName.innerText = experts[activeExpertCounter].name
-        activeExpertDescription.innerText = experts[activeExpertCounter].description
-        activeExpertImg.src = experts[activeExpertCounter].src
-        activeExpertImg.style.opacity = '1'
-        activeExpertName.style.opacity = '1'
-        activeExpertDescription.style.opacity = '1'
-    }, 200)
-})
-
-
-const nextExpertBtn = document.getElementById('rightArrow')
-nextExpertBtn.addEventListener('click', () => {
-    if (activeExpertCounter === experts.length - 1) {
-        activeExpertCounter = 0
-    } else {
-        activeExpertCounter++
-    }
-
-    for (let i = 0; i < expertDots.children.length; i++) {
-        if (i === activeExpertCounter) {
-            expertDots.children[i].setAttribute('fill', '#0C0E1F')
-        } else {
-            expertDots.children[i].setAttribute('fill', '#E6E7E5')
-        }
-    }
-
-    activeExpertImg.style.opacity = '0'
-    activeExpertName.style.opacity = '0'
-    activeExpertDescription.style.opacity = '0'
-    setTimeout(() => {
-        activeExpertName.innerText = experts[activeExpertCounter].name
-        activeExpertDescription.innerText = experts[activeExpertCounter].description
-        activeExpertImg.src = experts[activeExpertCounter].src
-        activeExpertImg.style.opacity = '1'
-        activeExpertName.style.opacity = '1'
-        activeExpertDescription.style.opacity = '1'
-    }, 200)
-})
-
-
 const partners = [
     {
         img: './img/kaspersky.png',
@@ -410,4 +276,83 @@ for (let href of mobileMenuItems) {
         }, 200)
     })
 }
+
+
+
+
+
+
+window.addEventListener('DOMContentLoaded', () => {
+
+    const resizableSwiper = (breakpoint, swiperClass, swiperSettings, callback) => {
+        let swiper
+
+        breakpoint = window.matchMedia(breakpoint)
+
+        const enableSwiper = function (className, settings) {
+            swiper = new Swiper(className, settings)
+
+            if (callback) {
+                callback(swiper)
+            }
+        }
+
+        const checker = function () {
+            if (breakpoint.matches) {
+                return enableSwiper(swiperClass, swiperSettings)
+            } else {
+                if (swiper !== undefined) swiper.destroy(true, true)
+                return
+            }
+        }
+
+        breakpoint.addEventListener('change', checker)
+        checker()
+    }
+
+    const someFunc = (instance) => {
+        if (instance) {
+            instance.on('slideChange', function (e) {
+                console.log('*** mySwiper.activeIndex', instance.activeIndex)
+            })
+        }
+    }
+
+    resizableSwiper(
+        '(max-width: 1280px)',
+        '.slider-1',
+        {
+            loop: true,
+            spaceBetween: 32,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                prevEl: '#leftArrow',
+                nextEl: '#rightArrow',
+            },
+        },
+        someFunc
+    )
+
+    resizableSwiper(
+        '(max-width: 1500px)',
+        '.slider-2',
+        {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 3,
+            freeMode: true,
+            breakpoints: {
+                1200: {
+                    spaceBetween: 20,
+                }
+            }
+        }
+    )
+})
+
+
 
