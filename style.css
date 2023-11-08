@@ -1825,7 +1825,7 @@ a {
     .descriptionSvgDots1Mobile {
         display: block;
         position: absolute;
-        top: 18rem;
+        top: 19rem;
         left: 0;
         height: 10rem;
         width: 18rem;
@@ -2325,10 +2325,10 @@ a {
     }
 
     .descriptionImgContainer {
-        width: 26.5rem;
+        width: 26rem;
         height: 18.875rem;
         border-radius: 2rem;
-        margin-left: 2.5rem;
+        margin-left: 3rem;
     }
 
     .descriptionImgContainer2 {
@@ -2336,7 +2336,7 @@ a {
     }
 
     .descriptionImg {
-        width: 26.5rem;
+        width: 26rem;
         height: 18.875rem;
         border-radius: 2rem;
         top: .31rem;
@@ -2356,7 +2356,7 @@ a {
     .descriptionBlockText {
         align-items: center;
         width: 24.375rem;
-        margin-left: 1rem;
+        margin-left: 1.5rem;
         margin-top: 1.5rem;
         font-size: .9rem;
 
@@ -2404,7 +2404,7 @@ a {
     }
 
     #descriptionBlockText2 {
-        margin-left: 1rem;
+        margin-left: 3rem;
     }
 
     .descriptionParagraphContainer {
@@ -2445,7 +2445,7 @@ a {
         position: absolute;
         width: 28.5rem;
         height: 23rem;
-        top: 26rem;
+        top: 27rem;
 
     }
 
@@ -2463,7 +2463,7 @@ a {
     }
 
     #participantTitleMobile {
-        padding-top: 5rem;
+        padding-top: 3rem;
         margin-left: 1rem;
         display: block;
     }
@@ -2534,7 +2534,7 @@ a {
         border-radius: 1.56506rem;
         border: 0.626px solid #0C0E1F;
         background: #FAFBF7;
-        margin: 3rem 1rem 5rem;
+        margin: 2rem 1rem 5rem;
     }
 
     .participantPopupTitle {
