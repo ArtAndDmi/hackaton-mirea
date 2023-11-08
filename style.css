@@ -276,7 +276,7 @@ a {
     line-height: 3rem; /* 150% */
     margin: 3rem 0 0 0;
     height: 3rem;
-    text-transform: uppercasequestion;
+    text-transform: uppercase;
 }
 
 .mainBlockContainer {
@@ -1001,7 +1001,7 @@ a {
 .svgLine {
     position: absolute;
     top: 18.19rem;
-    left: 35.5rem;
+    left: 35.4rem;
     height: 72%;
 
 }
@@ -1851,7 +1851,7 @@ a {
     .timetableSvgLines1Mobile {
         display: block;
         position: absolute;
-        top: 10rem;
+        top: 0rem;
         width: 28.5rem;
         height: 100rem;
     }
@@ -1899,7 +1899,7 @@ a {
         position: absolute;
         width: 28.5rem;
         top: 50rem;
-        height: 30rem;
+        height: 50rem;
     }
 
     .expertsSvgDots2Mobile {
@@ -1908,13 +1908,13 @@ a {
         right: 0;
         height: 10rem;
         width: 13rem;
-        top: 77rem;
+        top: 90rem;
     }
 
     .expertsSvgLines3Mobile {
         display: block;
         position: absolute;
-        top: 83rem;
+        top: 93rem;
         left: 0;
         width: 28.5rem;
         height: 40rem;
@@ -1960,6 +1960,7 @@ a {
 
     .expert {
         height: 38.5rem;
+        align-items: center;
     }
 
     .mobileMenuIcon {
@@ -2309,12 +2310,12 @@ a {
 
     .descriptionBlockTitle {
         color: #0C0E1F;
-        font-size: 1rem;
+        font-size: 1.2rem;
         max-width: 100%;
         font-style: normal;
         font-weight: 100;
-        line-height: 1rem; /* 111.111% */
-        margin: 0 0 1rem 0;
+        line-height: 1.2rem; /* 111.111% */
+        margin: 0 0 1.5rem 0;
     }
 
     .descriptionBlockText {
@@ -2531,7 +2532,7 @@ a {
     }
 
     .prizeContainer {
-        height: 65rem;
+        height: 61rem;
     }
 
 
@@ -2732,7 +2733,7 @@ a {
     }
 
     .timetableContainer {
-        margin-top: 5rem;
+        margin-top: 0rem;
         height: auto;
     }
 
@@ -2975,13 +2976,15 @@ a {
 
     .timetableSvgStar {
         position: absolute;
-        left: -6rem;
+        left: -5.6rem;
         top: -.9rem;
+        height: 2.5rem;
+        width: 2.5rem;
     }
 
     .svgLine {
-        left: 1.3rem;
-        top: 13rem;
+        left: 1.35rem;
+        top: 12.2rem;
         width: 2rem;
         height: 84%;
         z-index: 1;
@@ -3044,11 +3047,12 @@ a {
     }
 
     .expertMobile {
-        display: block;
-        margin-left: 1.25rem;
+
         position: relative;
-        height: 35rem;
-        margin-bottom: 10rem;
+        height: 40rem;
+        margin-bottom: 5rem;
+        display: flex;
+
     }
 
     .expertDotsMobile {
@@ -3069,17 +3073,30 @@ a {
         top: 45rem;
     }
 
+    .partnerContainer {
+    }
+
     #activeExpert {
         overflow-x: hidden;
-        border: 1px solid red
     }
 
     #activeExpertImg {
         transition: .2s;
+        margin-left: 0;
+        padding-left: 0;
     }
 
     #expertNameMobile {
         transition: .2s;
+    }
+
+    .expertName {
+        width: 24.8rem;
+    }
+
+    .expertDescription {
+        width: 24.8rem;
+        padding-left: 1.5rem;
     }
 
     .expertDescription {
@@ -3115,12 +3132,11 @@ a {
     .expertImg {
         width: 25.5rem;
         height: 25.5rem;
-        margin-left: .4rem;
-    }
+   }
 
     #leftArrow {
         position: absolute;
-        top: 103%;
+        top: 93.5%;
         left: 2.4rem;
         width: 3rem;
         height: 3rem;
@@ -3157,7 +3173,7 @@ a {
 
     #rightArrow {
         position: absolute;
-        top: 103%;
+        top: 93.5%;
         right: 2.8rem;
         width: 3rem;
         height: 3rem;
@@ -3184,6 +3200,7 @@ a {
     #expertMobileContainer {
         display: flex;
         overflow-x: auto;
+        margin-left: 0;
 
 
     }
@@ -3221,11 +3238,19 @@ a {
     }
 
     .partnerMobile {
-        margin-top: 15rem;
+        margin-top: 12rem;
         display: block;
+
         position: relative;
         height: 18rem;
     }
+
+    .swiper-pagination2Container {
+        margin-top: .7rem;
+        margin-left: 11rem;
+    }
+
+
 
     .partnerDotsMobile {
         height: .5rem;
@@ -3241,8 +3266,9 @@ a {
     }
 
     .partnerImg {
-        max-height: 5rem;
+        max-height: 7rem;
         max-width: 20rem;
+        margin-bottom: 5rem;
     }
 
     .partnerDescription {
@@ -3258,7 +3284,7 @@ a {
 
     #partnerLeftArrow {
         position: absolute;
-        top: 98%;
+        top: 129%;
         left: 5rem;
         width: 3rem;
         height: 3rem;
@@ -3290,7 +3316,7 @@ a {
 
     #partnerRightArrow {
         position: absolute;
-        top: 98%;
+        top: 129%;
         right: 5rem;
         width: 3rem;
         height: 3rem;
@@ -3315,6 +3341,8 @@ a {
 
 
 
+
+
     #partnerRightArrowIcon {
         width: 1.5rem;
         height: 1.5rem;
@@ -3332,12 +3360,12 @@ a {
 
     #faqTitle {
         position: absolute;
-        top: 72rem;
+        top: 81rem;
     }
 
     .questions {
         margin-left: 0;
-        margin-top: 11.75rem;
+        margin-top: 17.75rem;
     }
 
     .question {
@@ -3346,9 +3374,9 @@ a {
         margin-right: 1.25rem;
         display: flex;
         width: calc(100% - 2.5rem);
-        padding: 0;
+        padding: 0 1rem 1.3rem 1rem;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         justify-content: start;
         gap: 1.5rem;
         border: 1px solid #0C0E1F;
@@ -3356,9 +3384,9 @@ a {
         background: rgba(250, 251, 247, 0.01);
         -webkit-backdrop-filter: blur(.1rem);
         backdrop-filter: blur(.1rem);
-        margin-bottom: 1.5rem;
+        margin-bottom: .5rem;
         transition: .2s;
-        height: 5rem;
+        height: 6rem;
         cursor: pointer;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         z-index: 2;
@@ -3378,16 +3406,17 @@ a {
         font-style: normal;
         font-weight: 400;
         line-height: 1.25rem; /* 125% */
-        width: 18.875rem;
+        width: 18rem;
         padding-top: 1.25rem;
-        margin-left: .5rem;
+        margin-left: 0;
     }
 
     .questionHeaderContainer {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        margin-left: 1.5rem;
+        margin-left: 0;
+        margin-right: 0;
         margin-top: .5rem;
     }
 
@@ -3401,12 +3430,14 @@ a {
         line-height: 1.25rem; /* 142.857% */
         transition: .2s;
         opacity: 0;
+        margin: 0;
+        padding: 0;
     }
 
     .plusSvg {
         width: 1.5rem;
         height: 1.5rem;
-        margin-right: 1.25rem;
+        margin-right: 0rem;
         margin-top: 1rem;
     }
 

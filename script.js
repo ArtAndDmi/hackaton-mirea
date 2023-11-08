@@ -39,102 +39,6 @@ setInterval(() => {
 }, 1000)
 
 
-const partners = [
-    {
-        img: './img/kaspersky.png',
-        description: 'Мы разрабатываем комплексные IT системы для вашего бизнеса, оцифровываем все бизнес-процессы, переводя их в единую информационную систему. Это делает управление компанией прозрачным и позволяет собственникам и руководству принимать решения, опираясь на реальные цифровые показатели — а не на домыслы и составленные вручную отчёты.',
-    },
-    {
-        img: './img/yandex.png',
-        description: 'Одна из крупнейших IT-компаний в России. Мы развиваем самую популярную в стране поисковую систему и создаем сервисы, которые помогают людям в повседневных делах. С их помощью можно искать информацию в интернете, слушать музыку, выбирать товары и места, заказывать еду, перемещаться по городу и делать многое другое. Яндекс предлагает также продукты для бизнеса.',
-    },
-    {
-        img: './img/answerPro.png',
-        description: 'Аккредитованная ФСБ испытательная лаборатория, c 2006 года занимается деятельностью, связанной с разработкой и поддержкой программного обеспечения, производством микроэлектроники, поставкой технических и программных средств безопасности, тематическими исследования средств защиты информации.',
-    },
-    {
-        img: './img/sitronics.png',
-        description: 'Многопрофильная российская компания с обширным опытом в цифровизации стратегических отраслей экономики и реализации крупномасштабных проектов для бизнеса и государства. Является производителем высокотехнологичного оборудования и разработчиком программных решений.',
-    },
-    {
-        img: './img/devOpsSchool.png',
-        description: 'Школа DevOps реализует в Институте кибербезопасности и цифровых технологий научно-исследовательскую и образовательную деятельность в следующих направлениях: проведение факультативных курсов, мастер-классов, конференций, командных соревнований.',
-    },
-    {
-        img: './img/digitalize.png',
-        description: 'Мы разрабатываем комплексные IT системы для вашего бизнеса, оцифровываем все бизнес-процессы, переводя их в единую информационную систему. Это делает управление компанией прозрачным и позволяет собственникам и руководству принимать решения, опираясь на реальные цифровые показатели — а не на домыслы и составленные вручную отчёты.',
-    },
-    {
-        img: './img/arenadata.png',
-        description: 'Ведущий российский разработчик платформ сбора и хранения данных для компаний, которые хотят изменить бизнес с помощью цифровизации процессов и сложной аналитики, основанной на использовании Big Data.',
-    },
-    {
-        img: './img/communigate.png',
-        description: 'Мы разрабатываем самые эффективные и безопасные в мире технологии унифицированных коммуникаций, обеспечивая предприятиям любого размера превосходные возможности в сфере связи и взаимодействия. ',
-    },
-]
-
-const activePartnerImg = document.getElementById('partnerImgMobile')
-activePartnerImg.style.transition = '.5s'
-const activePartnerDescription = document.getElementById('partnerDescriptionMobile')
-activePartnerDescription.style.transition = '.5s'
-let activePartnerCounter = 0
-const partnerDots = document.getElementsByClassName('partnerDotsMobile')[0]
-
-const prevPartnerBtn = document.getElementById('partnerLeftArrow')
-prevPartnerBtn.addEventListener('click', () => {
-    if (activePartnerCounter === 0) {
-        activePartnerCounter = partners.length - 1
-    } else {
-        activePartnerCounter--
-
-    }
-
-    for (let i = 0; i < partnerDots.children.length; i++) {
-        if (i === activePartnerCounter) {
-            partnerDots.children[i].setAttribute('fill', '#0C0E1F')
-        } else {
-            partnerDots.children[i].setAttribute('fill', '#E6E7E5')
-        }
-    }
-
-    activePartnerImg.style.opacity = '0'
-    activePartnerDescription.style.opacity = '0'
-    setTimeout(() => {
-        activePartnerDescription.innerText = partners[activePartnerCounter].description
-        activePartnerImg.src = partners[activePartnerCounter].img
-        activePartnerImg.style.opacity = '1'
-        activePartnerDescription.style.opacity = '1'
-    }, 200)
-})
-
-
-const nextPartnerBtn = document.getElementById('partnerRightArrow')
-nextPartnerBtn.addEventListener('click', () => {
-    if (activePartnerCounter === partners.length - 1) {
-        activePartnerCounter = 0
-    } else {
-        activePartnerCounter++
-
-    }
-
-    for (let i = 0; i < partnerDots.children.length; i++) {
-        if (i === activePartnerCounter) {
-            partnerDots.children[i].setAttribute('fill', '#0C0E1F')
-        } else {
-            partnerDots.children[i].setAttribute('fill', '#E6E7E5')
-        }
-    }
-
-    activePartnerImg.style.opacity = '0'
-    activePartnerDescription.style.opacity = '0'
-    setTimeout(() => {
-        activePartnerDescription.innerText = partners[activePartnerCounter].description
-        activePartnerImg.src = partners[activePartnerCounter].img
-        activePartnerImg.style.opacity = '1'
-        activePartnerDescription.style.opacity = '1'
-    }, 200)
-})
 
 const menuBtn = document.getElementById('mobileMenuIcon')
 const menu = document.getElementById('mobileMenu')
@@ -338,20 +242,26 @@ window.addEventListener('DOMContentLoaded', () => {
     )
 
     resizableSwiper(
-        '(max-width: 1500px)',
+        '(max-width: 1280px)',
         '.slider-2',
         {
             loop: true,
-            spaceBetween: 10,
-            slidesPerView: 3,
-            freeMode: true,
-            breakpoints: {
-                1200: {
-                    spaceBetween: 20,
-                }
-            }
-        }
+            spaceBetween: 32,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination2',
+                clickable: true,
+            },
+            navigation: {
+                prevEl: '#partnerLeftArrow',
+                nextEl: '#partnerRightArrow',
+            },
+        },
+        someFunc
     )
+
+
+
 })
 
 
