@@ -14,7 +14,7 @@ document.getElementById('footerGreenBtn').addEventListener('click', function () 
 
 
 const timeElements = document.getElementsByClassName('timeValue')
-const targetDate = new Date("2023-11-10T00:00:00Z").getTime()
+const targetDate = new Date("2023-11-24T23:00:00Z").getTime()
 
 function setTime() {
     const currentDate = new Date().getTime()
@@ -139,7 +139,7 @@ for (let i = 0; i < questions.length; i++) {
             }, 1)
         } else {
             activeQuestions[i] = false
-            questions[i].style.height = '5rem'
+            questions[i].style.height = window.innerWidth > 767 ? '5rem' : '5.5rem'
             answers[i].style.opacity = '0'
             answers[i].style.height = '0'
             svg.style.transform = 'rotate(0deg)'

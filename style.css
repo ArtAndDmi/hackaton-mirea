@@ -1777,7 +1777,7 @@ a {
     .mainBlockSvgLinesBottom {
         display: block;
         position: absolute;
-        bottom: 7rem;
+        top: 0;
         left: 0;
         width: 28.5rem;
         height: 70rem;
@@ -2310,7 +2310,7 @@ a {
 
     .descriptionBlockTitle {
         color: #0C0E1F;
-        font-size: 1.2rem;
+        font-size: 1.15rem;
         max-width: 100%;
         font-style: normal;
         font-weight: 100;
@@ -2480,7 +2480,6 @@ a {
     #participantBlock2 {
         margin-left: 1rem;
         border-radius: 10rem 20rem 20rem 10rem;
-
     }
 
     #participantSvg2 {
@@ -2525,7 +2524,7 @@ a {
     .participantText {
         color: #FAFBF7;
         text-align: center;
-        font-size: 1rem;
+        font-size: .97rem;
         font-style: normal;
         font-weight: 500;
         line-height: 1.32113rem; /* 132.114% */
@@ -2800,7 +2799,7 @@ a {
 
     .dateValue {
         margin-top: 0;
-        font-size: 1rem;
+        font-size: .95rem;
         font-style: normal;
         font-weight: 600;
         line-height: 1.25rem; /* 125% */
@@ -3246,10 +3245,16 @@ a {
     }
 
     .swiper-pagination2Container {
-        margin-top: .7rem;
-        margin-left: 11rem;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
+    .partnerMobileWrapper {
+        position: relative;
+        padding-bottom: 2.1rem;
+    }
 
 
     .partnerDotsMobile {
@@ -3386,7 +3391,7 @@ a {
         backdrop-filter: blur(.1rem);
         margin-bottom: .5rem;
         transition: .2s;
-        height: 6rem;
+        height: 5.5rem;
         cursor: pointer;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         z-index: 2;
