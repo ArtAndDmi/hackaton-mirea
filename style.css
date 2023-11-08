@@ -2328,7 +2328,7 @@ a {
         width: 26rem;
         height: 18.875rem;
         border-radius: 2rem;
-        margin-left: 3rem;
+        margin-left: 2.5rem;
     }
 
     .descriptionImgContainer2 {
@@ -2404,7 +2404,7 @@ a {
     }
 
     #descriptionBlockText2 {
-        margin-left: 3rem;
+        margin-left: 1.5rem;
     }
 
     .descriptionParagraphContainer {
@@ -2738,7 +2738,7 @@ a {
         padding-top: 3.8rem;
     }
     #timetableSvgStar2{
-        padding-top: 4.8rem;
+        padding-top: 5.3rem;
 
     }
     #timetableSvgStar3{
@@ -2846,7 +2846,7 @@ a {
         margin-top: 0;
     }
     #dateContainer2{
-        margin-top: 0;
+        margin-top: .5rem;
     }
     #dateContainer3{
         margin-top: 0;

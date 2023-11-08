@@ -1,7 +1,7 @@
 
 
 
-document.getElementById('participateBtn').addEventListener('click', function () {
+document.getElementById('greenBtn').addEventListener('click', function () {
     window.location.href = 'https://www.yandex.com'
 })
 document.getElementById('footerGreenBtn').addEventListener('click', function () {
@@ -11,6 +11,16 @@ document.getElementById('footerGreenBtn').addEventListener('click', function () 
     // Откроем новую ссылку в текущем окне браузера
     window.location.href = 'https://www.yandex.com'
 })
+document.getElementById('transparentBtn').addEventListener('click', function () {
+    window.location.href = 'https://t.me/mirea_hackathon'
+})
+document.getElementById('mobileMenuButton').addEventListener('click', function () {
+    window.location.href = 'https://www.yandex.com'
+})
+document.getElementById('mobileMenuTgButton').addEventListener('click', function () {
+    window.location.href = 'https://t.me/mirea_hackathon'
+})
+
 
 
 const timeElements = document.getElementsByClassName('timeValue')
