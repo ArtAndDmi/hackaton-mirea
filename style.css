@@ -621,7 +621,7 @@ a {
 
 .participantSvgLines2 {
     position: absolute;
-    top: 25rem;
+    top: 23rem;
     width: 124.9rem;
     height: 70rem;
 
@@ -637,7 +637,7 @@ a {
 
 .participantTitle {
     color: #0C0E1F;
-    padding-top: 10rem;
+    padding-top: 4rem;
     margin-left: 13.13rem;
     margin-bottom: 8rem;
     margin-top: 0;
@@ -660,7 +660,7 @@ a {
 .participantBlock {
     position: relative;
     background: #0C0E1F;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
     text-align: center;
     padding: 2rem 6rem;
     margin-left: 26rem;
@@ -740,7 +740,9 @@ a {
     border-radius: 2.5rem;
     border: 1px solid #0C0E1F;
     background: #FAFBF7;
-    margin: 0 20rem 10rem 20rem;
+    margin: 2rem 20rem 10rem 20rem;
+    width: 70%;
+    transform: translateX(-5%);
 }
 
 .participantPopupTitle {
@@ -794,7 +796,7 @@ a {
     font-style: normal;
     font-weight: 500;
     line-height: 1.75rem; /* 58.333% */
-    padding-top: 10rem;
+    padding-top: 9rem;
     padding-left: 13.13rem;
 }
 
@@ -1250,7 +1252,7 @@ a {
 
 .expertsSvgLines2 {
     position: absolute;
-    top: 100rem;
+    top: 68rem;
     width: 125rem;
     left: 0;
     z-index: 0;
@@ -1258,9 +1260,9 @@ a {
 
 .expertsSvgDots2 {
     position: absolute;
-    bottom: 131rem;
+    bottom: 148rem;
     width: 25rem;
-    left: 10rem;
+    left: 8rem;
 }
 
 .expertsSvgLines3 {
@@ -1341,7 +1343,7 @@ a {
     font-weight: 500;
     line-height: 1.75rem; /* 58.333% */
     margin-bottom: 6rem;
-    z-index: 2;
+    z-index: 1;
 }
 
 #partnersTitle {
@@ -1352,7 +1354,7 @@ a {
 
 .partnersContainer {
     height: auto;
-    margin-top: 20rem;
+    margin-top: 25rem;
 }
 
 .partnersRow {
@@ -1417,13 +1419,13 @@ a {
     display: flex;
     flex-direction: column;
     margin-left: 13.13rem;
-    margin-top: 20rem;
+    margin-top: 17rem;
     z-index: 0;
 }
 
 .questionSvgLines {
     position: absolute;
-    bottom: 15rem;
+    bottom: 17rem;
     left: 0;
     width: 125rem;
     height: 50rem;
@@ -1458,7 +1460,7 @@ a {
 }
 
 .question:last-child {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 
@@ -1473,7 +1475,7 @@ a {
     display: flex;
     align-items: center;
     height: 0;
-    padding-left: 1rem;
+
 }
 
 
@@ -1502,8 +1504,8 @@ a {
 
 
 .plusSvg {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     margin-right: 1.25rem;
     transition: .2s;
 }
@@ -1826,7 +1828,7 @@ a {
         display: block;
         position: absolute;
         top: 19rem;
-        left: 0;
+        right: 10.8rem;
         height: 10rem;
         width: 18rem;
     }
@@ -1907,8 +1909,7 @@ a {
     .expertsSvgLines1Mobile {
         display: block;
         position: absolute;
-        top: 10rem;
-        left: 0;
+        top: 7rem;
         width: 28.5rem;
         height: 40rem;
     }
@@ -3328,7 +3329,7 @@ a {
 
     .partnerMobileWrapper {
         position: relative;
-        padding-bottom: 2.1rem;
+        padding-bottom: 3rem;
     }
 
 
@@ -3348,7 +3349,7 @@ a {
     .partnerImg {
         max-height: 7rem;
         max-width: 20rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
 
     .partnerDescription {
@@ -3364,14 +3365,14 @@ a {
 
     #partnerLeftArrow {
         position: absolute;
-        top: 129%;
+        top: 120%;
         left: 5rem;
         width: 3rem;
         height: 3rem;
         border-radius: 50%;
         border: 1px solid #8A8D96;
         background: #FAFBF7;
-        z-index: 2;
+        z-index: 10;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -3396,7 +3397,7 @@ a {
 
     #partnerRightArrow {
         position: absolute;
-        top: 129%;
+        top: 120%;
         right: 5rem;
         width: 3rem;
         height: 3rem;
@@ -3445,7 +3446,7 @@ a {
 
     .questions {
         margin-left: 0;
-        margin-top: 17.75rem;
+        margin-top: 18rem;
     }
 
     .question {
@@ -3486,10 +3487,11 @@ a {
         font-style: normal;
         font-weight: 400;
         line-height: 1.25rem; /* 125% */
-        width: 18rem;
+        width: 19rem;
         padding-top: 1.25rem;
         margin-left: 0;
         padding-left: 1rem;
+
     }
 
     .questionHeaderContainer {
@@ -3512,7 +3514,7 @@ a {
         transition: .2s;
         opacity: 0;
         margin: 0 0 0 1rem;
-        width: 22rem;
+        width: 20.9rem;
         padding: 0;
     }
 
