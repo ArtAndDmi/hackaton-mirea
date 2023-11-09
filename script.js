@@ -21,6 +21,25 @@ document.getElementById('mobileMenuTgButton').addEventListener('click', function
     window.location.href = 'https://t.me/mirea_hackathon'
 })
 
+const resizeMainBlock = () => {
+    const mainBlock = document.getElementsByClassName('mainBlock')[0]
+
+    if (window.innerWidth / window.innerHeight > 0.65 && window.innerWidth / window.innerHeight < 1.5) {
+        if (window.innerWidth > 767) {
+            mainBlock.style.height = '60rem'
+        } else {
+            mainBlock.style.height = '52rem'
+        }
+
+
+    } else {
+        mainBlock.style.height = '100vh'
+    }
+}
+
+resizeMainBlock()
+
+window.addEventListener('resize', resizeMainBlock)
 
 
 const timeElements = document.getElementsByClassName('timeValue')
