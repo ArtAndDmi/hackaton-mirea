@@ -3569,7 +3569,7 @@ a {
         color: #0C0E1F;
         display: none;
         font-family: Montserrat;
-        font-size: 0.875rem;
+        font-size: 0.851rem;
         font-style: normal;
         font-weight: 500;
         line-height: 1.25rem; /* 142.857% */
@@ -3619,6 +3619,7 @@ a {
         font-style: normal;
         font-weight: 400;
         line-height: 1.25rem; /* 111.111% */
+        text-transform: initial;
     }
 
     .footerGreenBtn {
