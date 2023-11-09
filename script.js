@@ -23,9 +23,10 @@ document.getElementById('mobileMenuTgButton').addEventListener('click', function
 
 const resizeMainBlock = () => {
     const mainBlock = document.getElementsByClassName('mainBlock')[0]
-
-    if (window.innerWidth / window.innerHeight > 0.65 && window.innerWidth / window.innerHeight < 1.5) {
+    console.log(window.innerWidth / window.innerHeight)
+    if ((window.innerWidth / window.innerHeight > 0.65 && window.innerWidth / window.innerHeight < 1.5) || (window.innerWidth / window.innerHeight > 2)) {
         if (window.innerWidth > 767) {
+
             mainBlock.style.height = '65rem'
         } else {
             mainBlock.style.height = '53rem'
@@ -39,10 +40,11 @@ const resizeMainBlock = () => {
         mainBlock.style.height = '65rem'
     }
 
-    if (window.innerWidth < 767 && window.innerHeight < 821) {
+    if (window.innerWidth < 767 && window.innerWidth / window.innerHeight >= .56) {
         mainBlock.style.height = '53rem'
-
+        // console.log(1)
     }
+
 }
 
 resizeMainBlock()

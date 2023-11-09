@@ -1455,7 +1455,7 @@ a {
     display: flex;
     flex-direction: column;
     margin-left: 13.13rem;
-    margin-top: 17rem;
+    margin-top: 19rem;
     z-index: 0;
     position: relative;
 }
@@ -1497,7 +1497,7 @@ a {
 }
 
 .question:last-child {
-    margin-bottom: 5rem;
+    margin-bottom: 13rem;
 }
 
 
@@ -2598,7 +2598,7 @@ a {
         /* Моб мелк текст */
         font-size: 0.875rem;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1.25rem; /* 142.857% */
     }
 
@@ -2788,7 +2788,7 @@ a {
     }
 
     #timetableSvgStar3 {
-        padding-top: 6.1rem;
+        padding-top: 5.4rem;
 
     }
 
@@ -2946,7 +2946,7 @@ a {
     }
 
     .timetableBlockTitle {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-style: normal;
         font-weight: 500;
         line-height: 1.25rem; /* 111.111% */
@@ -2955,7 +2955,7 @@ a {
 
     .timetableBlockDescription {
         font-style: normal;
-        font-weight: 400;
+        font-weight: inherit;
         line-height: 1.25rem; /* 142.857% */
         width: auto;
     }
@@ -2963,18 +2963,19 @@ a {
     #timetableAddress {
         width: 20rem;
         font-size: 1rem;
+        font-weight: 500;
     }
 
     #timetableBlockDescription2 {
-        width: 17rem;
-        font-size: 1rem;
-        font-weight: 300;
+        width: 18rem;
+        font-size: .95rem;
+        font-weight: 500;
     }
 
     #timetableBlockDescription3 {
         width: 17rem;
-        font-size: 1rem;
-        font-weight: 300;
+        font-size: .95rem;
+        font-weight: 500;
         /*line-height: 1rem;*/
     }
 
@@ -2996,7 +2997,7 @@ a {
     #timetableBlockDescription41 {
         color: #FAFBF7;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 500;
         line-height: 15px; /* 142.857% */
         font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
@@ -3008,7 +3009,7 @@ a {
     #timetableBlockDescription42 {
         color: #FAFBF7;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 500;
         line-height: 20px; /* 142.857% */
         font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
@@ -3019,7 +3020,7 @@ a {
     #timetableBlockDescription43 {
         color: #FAFBF7;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 500;
         line-height: 20px; /* 142.857% */
         font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
@@ -3029,7 +3030,7 @@ a {
     #timetableBlockDescription4 {
         color: #FAFBF7;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 500;
         line-height: 20px; /* 142.857% */
         font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
@@ -3041,7 +3042,7 @@ a {
     #timetableBlockDescription44 {
         color: #FAFBF7;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 500;
         line-height: 20px; /* 142.857% */
         font-size: 1rem;
 
@@ -3059,7 +3060,7 @@ a {
     #timetableBlockDescription4 {
         color: #FAFBF7;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 500;
         line-height: 1rem; /* 142.857% */
         font-size: .8rem;
         height: 1rem;
@@ -3222,12 +3223,13 @@ a {
     .expertDescription {
         width: 100%;
         padding-left: 1.5rem;
+
     }
 
     .expertDescription {
         font-size: 0.875rem;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1.25rem; /* 142.857% */
         width: auto;
         margin-top: 1.25rem;
@@ -3408,7 +3410,7 @@ a {
     .partnerDescription {
         font-size: 0.875rem;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1.25rem; /* 142.857% */
         width: auto;
         margin-top: 1.25rem;
@@ -3480,7 +3482,6 @@ a {
 
     .faqTitle {
         margin-left: 1.25rem;
-        margin-top: 14rem;
         margin-bottom: 1.5rem;
         font-size: 1.5rem;
         font-style: normal;
@@ -3494,7 +3495,9 @@ a {
 
     #faqTitle {
         position: absolute;
-        top: 71rem;
+        z-index: 2;
+        left: 0;
+        top: -4.3rem;
     }
 
     .questions {
@@ -3538,7 +3541,7 @@ a {
     .questionHeader {
         font-size: 1rem;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1.25rem; /* 125% */
         width: 19rem;
         padding-top: 1.25rem;
@@ -3562,7 +3565,7 @@ a {
         font-family: Montserrat;
         font-size: 0.875rem;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1.25rem; /* 142.857% */
         transition: .2s;
         opacity: 0;
