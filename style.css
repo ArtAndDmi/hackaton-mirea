@@ -318,7 +318,7 @@ a {
 
 .mainBlockButtons {
     display: flex;
-    margin-top: 4.4rem;
+    margin-top: 4.2rem;
 }
 
 .greenBtn {
@@ -992,8 +992,8 @@ a {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 125rem;
-    height: 125rem;
+    width: 110rem;
+    height: 90rem;
     z-index: -1;
 }
 
@@ -1279,8 +1279,9 @@ a {
 
 .expertsSvgLines2 {
     position: absolute;
-    top: 68rem;
+    top: 112rem;
     width: 125rem;
+    height: 80rem;
     left: 0;
     z-index: 0;
 }
@@ -1429,8 +1430,6 @@ a {
 .faqTitle {
     color: #0C0E1F;
     margin-left: 13.13rem;
-    margin-top: 6.87rem;
-    margin-bottom: 6rem;
     /* заголовок обычный */
     font-size: 3rem;
     font-style: normal;
@@ -1442,8 +1441,8 @@ a {
 #faqTitle {
     position: absolute;
     /*margin-top: -10rem;*/
-    padding-top: 10rem;
-    top: 255rem;
+    right: 102rem;
+    top: -8rem;
 }
 
 #faqTitleRef {
@@ -1458,6 +1457,7 @@ a {
     margin-left: 13.13rem;
     margin-top: 17rem;
     z-index: 0;
+    position: relative;
 }
 
 .questionSvgLines {
@@ -1543,8 +1543,8 @@ a {
 .plusSvg {
     width: 2rem;
     height: 2rem;
-    margin-right: 1.25rem;
     transition: .2s;
+    margin-right: -2rem;
 }
 
 .footer {
@@ -1741,14 +1741,7 @@ a {
     margin-left: 0;
 }
 
-@media screen and (min-width: 767px) and (max-height: 820px) {
 
-
-    .mainBlock {
-        height: 60rem;
-    }
-
-}
 
 @media (max-device-width: 767px), (max-width: 767px) {
 
@@ -2192,7 +2185,7 @@ a {
     .mainBlockContainer {
         flex-direction: column;
         align-self: start;
-        margin-left: 2rem;
+        margin-left: 1.8rem;
     }
 
     .mainBlockItemSvg {
@@ -2415,9 +2408,9 @@ a {
     .descriptionBlockBody {
         font-size: inherit;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1.2rem; /* 142.857% */
-        width: 25rem;
+        width: 25.5rem;
     }
 
 
@@ -2486,7 +2479,7 @@ a {
         position: absolute;
         width: 28.5rem;
         height: 33rem;
-        top: 0;
+        bottom: 25rem;
 
     }
 
@@ -2495,7 +2488,7 @@ a {
         position: absolute;
         width: 28.5rem;
         height: 23rem;
-        top: 27rem;
+        top: 24rem;
 
     }
 
@@ -2508,7 +2501,7 @@ a {
         font-weight: 500;
         line-height: 1.75rem; /* 116.667% */
         display: none;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         padding-top: 3rem;
     }
 
@@ -2519,7 +2512,7 @@ a {
     }
 
     .participantBlock {
-        margin: 2rem auto;
+        margin: 1.8rem auto;
         width: 18rem;
         padding: 1.5rem 4rem;
         border-radius: 20rem 10rem 10rem 20rem;
@@ -2872,7 +2865,7 @@ a {
         font-style: normal;
         font-weight: 500;
         line-height: 1.75rem; /* 116.667% */
-        margin-bottom: 4rem
+        margin-bottom: 3rem
     }
 
     .timetableBlock {
@@ -2957,11 +2950,10 @@ a {
         font-style: normal;
         font-weight: 500;
         line-height: 1.25rem; /* 111.111% */
-        width: 24rem;
+        width: 23rem;
     }
 
     .timetableBlockDescription {
-        font-size: 10px;
         font-style: normal;
         font-weight: 400;
         line-height: 1.25rem; /* 142.857% */

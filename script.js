@@ -26,14 +26,22 @@ const resizeMainBlock = () => {
 
     if (window.innerWidth / window.innerHeight > 0.65 && window.innerWidth / window.innerHeight < 1.5) {
         if (window.innerWidth > 767) {
-            mainBlock.style.height = '60rem'
+            mainBlock.style.height = '65rem'
         } else {
-            mainBlock.style.height = '52rem'
+            mainBlock.style.height = '53rem'
         }
-
 
     } else {
         mainBlock.style.height = '100vh'
+    }
+
+    if (window.innerWidth > 820 && window.innerHeight < 767) {
+        mainBlock.style.height = '65rem'
+    }
+
+    if (window.innerWidth < 767 && window.innerHeight < 821) {
+        mainBlock.style.height = '53rem'
+
     }
 }
 
