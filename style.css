@@ -760,6 +760,7 @@ a {
     font-weight: 600;
     line-height: 2.375rem; /* 158.333% */
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 
@@ -772,6 +773,7 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: 2rem; /* 160% */
+    margin-bottom: 0;
 }
 
 .prizeContainer {
@@ -1442,7 +1444,7 @@ a {
     position: absolute;
     /*margin-top: -10rem;*/
     right: 102rem;
-    top: -8rem;
+    top: -11rem;
 }
 
 #faqTitleRef {
@@ -1600,6 +1602,7 @@ a {
     font-weight: 400;
     line-height: 3rem; /* 150% */
     margin: 0;
+    text-transform: uppercase;
 }
 
 .footerGreenBtn {
@@ -3497,7 +3500,7 @@ a {
         position: absolute;
         z-index: 2;
         left: 0;
-        top: -4.3rem;
+        top: -4.7rem;
     }
 
     .questions {
